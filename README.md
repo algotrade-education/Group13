@@ -77,7 +77,21 @@ conda activate plutus_x86
 pip install -r requirements.txt
 ```
 
-### 3.2 Running the Backtest
+### 3.2 Telegram Notifications Setup
+The live bot sends real-time trade notifications (entry, exit, P&L, errors) to a Telegram chat. To connect your own account, update the TELEGRAM section in config/config.py:
+
+```bash
+TELEGRAM = {
+    "token":   "YOUR_BOT_TOKEN_HERE",
+    "chat_id": "YOUR_CHAT_ID_HERE",
+}
+```
+To get these values:
+
+Token — Message @BotFather on Telegram, create a new bot with /newbot, and copy the token it gives you.
+Chat ID — Message @userinfobot on Telegram and it will reply with your chat ID.
+
+### 3.3 Running the Backtest
 
 ```bash
 # Step 1: Verify data pipeline
