@@ -1,0 +1,1102 @@
+[2026-05-05 09:46:12] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=5|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:46:12.000|56=SERVER|1=main|553=Group13|10=012|
+[2026-05-05 09:46:12] [INFO] Session created: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-05-05 09:46:12] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_i1xb703g.cfg username=Group13
+[2026-05-05 09:46:12] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-05-05 09:46:12] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-05-05 09:46:12] [DEBUG] Registered handler for event 'fix:execution_report'. Total handlers: 2
+[2026-05-05 09:46:12] [DEBUG] Registered handler for event 'fix:order:report'. Total handlers: 3
+[2026-05-05 09:46:12] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-05-05 09:46:12] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-05-05 09:46:12] [INFO] event=fix_id_resolved username=Group13 fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b
+[2026-05-05 09:46:12] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:46:12] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 09:46:12] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 09:46:12] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:46:12] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 09:46:12] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=472210000
+[2026-05-05 09:46:12] [INFO] Starting FIX session...
+[2026-05-05 09:46:12] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=135|35=A|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:46:12.000|56=SERVER|1=main|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=115|
+[2026-05-05 09:46:13] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260505-02:46:13.597|56=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|10=245|
+[2026-05-05 09:46:13] [INFO] Logon success: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-05-05 09:46:13] [INFO] Order manager session set: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-05-05 09:46:13] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-05-05 09:46:16] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:46:16] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 09:46:16] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 09:46:16] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:46:16] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 09:46:16] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=472210000
+[2026-05-05 09:49:34] [INFO] Session created: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-05-05 09:49:34] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_1kyjplrq.cfg username=Group13
+[2026-05-05 09:49:34] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-05-05 09:49:34] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-05-05 09:49:34] [DEBUG] Registered handler for event 'fix:execution_report'. Total handlers: 2
+[2026-05-05 09:49:34] [DEBUG] Registered handler for event 'fix:order:report'. Total handlers: 3
+[2026-05-05 09:49:34] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-05-05 09:49:34] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-05-05 09:49:34] [INFO] event=fix_id_resolved username=Group13 fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b
+[2026-05-05 09:49:34] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:49:34] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 09:49:34] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 09:49:34] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:49:34] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 09:49:34] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=472210000
+[2026-05-05 09:49:34] [INFO] Starting FIX session...
+[2026-05-05 09:49:35] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=135|35=A|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:49:35.000|56=SERVER|1=main|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=123|
+[2026-05-05 09:49:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260505-02:49:35.540|56=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|10=240|
+[2026-05-05 09:49:35] [INFO] Logon success: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-05-05 09:49:35] [INFO] Order manager session set: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-05-05 09:49:35] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-05-05 09:49:37] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:49:37] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 09:49:37] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 09:49:37] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:49:38] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 09:49:38] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=472210000
+[2026-05-05 09:49:38] [DEBUG] [TO APP] 8=FIX.4.4|9=186|35=D|34=2|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:49:38.000|56=SERVER|1=main|11=c46b9f3c|38=1|40=2|44=2012.5|54=1|55=VN30F2604|59=1|60=20260505-02:49:38|207=HNXDS|553=Group13|10=154|
+[2026-05-05 09:49:38] [INFO] [ORDER] Sent new order: c46b9f3c
+[2026-05-05 09:49:38] [DEBUG] No handlers registered for event 'fix:order:submit'
+[2026-05-05 09:49:38] [INFO] [FROM APP] 8=FIX.4.4|9=284|35=8|34=2|49=SERVER|52=20260505-02:49:38.142|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=c46b9f3c|14=0|17=6d30a232-d606-4938-8a92-55effb11c42f|37=a7d73d5d-12f0-454c-bb4f-e1806e96a96b|38=1|39=A|40=2|44=2012.5|54=1|55=VN30F2604|59=1|60=20260505-02:49:38.141|150=A|151=1|207=HNXDS|10=146|
+[2026-05-05 09:49:38] [INFO] [PENDING_NEW] c46b9f3c at 2026-05-05T02:49:38.141000+00:00
+[2026-05-05 09:49:38] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 09:49:38] [DEBUG] No handlers registered for event 'fix:order:pending_new'
+[2026-05-05 09:49:38] [INFO] [FROM APP] 8=FIX.4.4|9=284|35=8|34=3|49=SERVER|52=20260505-02:49:38.174|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=c46b9f3c|14=0|17=ffaa3cf3-2ad3-431d-9729-51790d775705|37=a7d73d5d-12f0-454c-bb4f-e1806e96a96b|38=1|39=0|40=2|44=2012.5|54=1|55=VN30F2604|59=1|60=20260505-02:49:38.174|150=0|151=1|207=HNXDS|10=132|
+[2026-05-05 09:49:38] [INFO] [NEW] Order c46b9f3c accepted at 2026-05-05T02:49:38.174000+00:00
+[2026-05-05 09:49:38] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 09:49:38] [DEBUG] No handlers registered for event 'fix:order:accepted'
+[2026-05-05 09:50:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:50:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 09:50:01] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 09:50:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:50:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 09:50:01] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=421877500.0
+[2026-05-05 09:50:01] [DEBUG] [TO APP] 8=FIX.4.4|9=186|35=D|34=3|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:50:01.000|56=SERVER|1=main|11=f4d877c6|38=1|40=2|44=2012.6|54=1|55=VN30F2604|59=1|60=20260505-02:50:01|207=HNXDS|553=Group13|10=081|
+[2026-05-05 09:50:01] [INFO] [ORDER] Sent new order: f4d877c6
+[2026-05-05 09:50:01] [DEBUG] No handlers registered for event 'fix:order:submit'
+[2026-05-05 09:50:01] [INFO] [FROM APP] 8=FIX.4.4|9=284|35=8|34=4|49=SERVER|52=20260505-02:50:02.028|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=f4d877c6|14=0|17=7bfc17b3-628a-412f-93d3-a29e423a922d|37=3a295b6f-de12-49bd-8875-9635a4104f7b|38=1|39=A|40=2|44=2012.6|54=1|55=VN30F2604|59=1|60=20260505-02:50:02.021|150=A|151=1|207=HNXDS|10=242|
+[2026-05-05 09:50:01] [INFO] [PENDING_NEW] f4d877c6 at 2026-05-05T02:50:02.021000+00:00
+[2026-05-05 09:50:01] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 09:50:01] [DEBUG] No handlers registered for event 'fix:order:pending_new'
+[2026-05-05 09:50:01] [INFO] [FROM APP] 8=FIX.4.4|9=284|35=8|34=5|49=SERVER|52=20260505-02:50:02.073|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=f4d877c6|14=0|17=4f6a62d4-9a7e-42a7-913f-73448ecb1fc3|37=3a295b6f-de12-49bd-8875-9635a4104f7b|38=1|39=0|40=2|44=2012.6|54=1|55=VN30F2604|59=1|60=20260505-02:50:02.072|150=0|151=1|207=HNXDS|10=020|
+[2026-05-05 09:50:01] [INFO] [NEW] Order f4d877c6 accepted at 2026-05-05T02:50:02.072000+00:00
+[2026-05-05 09:50:01] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 09:50:01] [DEBUG] No handlers registered for event 'fix:order:accepted'
+[2026-05-05 09:50:31] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=4|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:50:31.000|56=SERVER|1=main|553=Group13|10=006|
+[2026-05-05 09:50:32] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=6|49=SERVER|52=20260505-02:50:32.326|56=f2c11b00bf3d41fca072225f328ce98e|10=140|
+[2026-05-05 09:51:01] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=5|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:51:01.000|56=SERVER|1=main|553=Group13|10=005|
+[2026-05-05 09:51:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:51:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 09:51:01] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 09:51:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:51:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 09:51:01] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=371542500.0
+[2026-05-05 09:51:01] [DEBUG] [TO APP] 8=FIX.4.4|9=186|35=D|34=6|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:51:01.000|56=SERVER|1=main|11=ca57a907|38=1|40=2|44=2012.4|54=1|55=VN30F2604|59=1|60=20260505-02:51:01|207=HNXDS|553=Group13|10=072|
+[2026-05-05 09:51:01] [INFO] [ORDER] Sent new order: ca57a907
+[2026-05-05 09:51:01] [DEBUG] No handlers registered for event 'fix:order:submit'
+[2026-05-05 09:51:01] [INFO] [FROM APP] 8=FIX.4.4|9=284|35=8|34=7|49=SERVER|52=20260505-02:51:02.078|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=ca57a907|14=0|17=8a1d881e-0718-406c-b0c0-2e8a044cbf20|37=bdafa460-b09f-4be2-8a2a-efbdd64a4c34|38=1|39=A|40=2|44=2012.4|54=1|55=VN30F2604|59=1|60=20260505-02:51:02.077|150=A|151=1|207=HNXDS|10=075|
+[2026-05-05 09:51:01] [INFO] [PENDING_NEW] ca57a907 at 2026-05-05T02:51:02.077000+00:00
+[2026-05-05 09:51:01] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 09:51:01] [DEBUG] No handlers registered for event 'fix:order:pending_new'
+[2026-05-05 09:51:02] [INFO] [FROM APP] 8=FIX.4.4|9=284|35=8|34=8|49=SERVER|52=20260505-02:51:02.145|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=ca57a907|14=0|17=9c9499d8-f8a0-4b17-bf85-e08c5c2ad1f6|37=bdafa460-b09f-4be2-8a2a-efbdd64a4c34|38=1|39=0|40=2|44=2012.4|54=1|55=VN30F2604|59=1|60=20260505-02:51:02.143|150=0|151=1|207=HNXDS|10=169|
+[2026-05-05 09:51:02] [INFO] [NEW] Order ca57a907 accepted at 2026-05-05T02:51:02.143000+00:00
+[2026-05-05 09:51:02] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 09:51:02] [DEBUG] No handlers registered for event 'fix:order:accepted'
+[2026-05-05 09:51:31] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=7|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:51:31.000|56=SERVER|1=main|553=Group13|10=010|
+[2026-05-05 09:51:32] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=9|49=SERVER|52=20260505-02:51:32.326|56=f2c11b00bf3d41fca072225f328ce98e|10=144|
+[2026-05-05 09:52:01] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=8|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:52:01.000|56=SERVER|1=main|553=Group13|10=009|
+[2026-05-05 09:52:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:52:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 09:52:01] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 09:52:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:52:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 09:52:02] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=321212500.0
+[2026-05-05 09:52:02] [DEBUG] [TO APP] 8=FIX.4.4|9=186|35=D|34=9|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:52:02.000|56=SERVER|1=main|11=50610777|38=1|40=2|44=2011.7|54=1|55=VN30F2604|59=1|60=20260505-02:52:02|207=HNXDS|553=Group13|10=193|
+[2026-05-05 09:52:02] [INFO] [ORDER] Sent new order: 50610777
+[2026-05-05 09:52:02] [DEBUG] No handlers registered for event 'fix:order:submit'
+[2026-05-05 09:52:02] [INFO] [FROM APP] 8=FIX.4.4|9=285|35=8|34=10|49=SERVER|52=20260505-02:52:02.142|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=50610777|14=0|17=68c9cea8-8087-474d-913c-88583d48355a|37=a10b7859-3d7d-43de-9adf-aec58a7b4165|38=1|39=A|40=2|44=2011.7|54=1|55=VN30F2604|59=1|60=20260505-02:52:02.139|150=A|151=1|207=HNXDS|10=224|
+[2026-05-05 09:52:02] [INFO] [PENDING_NEW] 50610777 at 2026-05-05T02:52:02.139000+00:00
+[2026-05-05 09:52:02] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 09:52:02] [DEBUG] No handlers registered for event 'fix:order:pending_new'
+[2026-05-05 09:52:02] [INFO] [FROM APP] 8=FIX.4.4|9=285|35=8|34=11|49=SERVER|52=20260505-02:52:02.189|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=50610777|14=0|17=7af605cc-53e9-4a18-8d63-c8c3b60e190f|37=a10b7859-3d7d-43de-9adf-aec58a7b4165|38=1|39=0|40=2|44=2011.7|54=1|55=VN30F2604|59=1|60=20260505-02:52:02.188|150=0|151=1|207=HNXDS|10=113|
+[2026-05-05 09:52:02] [INFO] [NEW] Order 50610777 accepted at 2026-05-05T02:52:02.188000+00:00
+[2026-05-05 09:52:02] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 09:52:02] [DEBUG] No handlers registered for event 'fix:order:accepted'
+[2026-05-05 09:52:32] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=10|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:52:32.000|56=SERVER|1=main|553=Group13|10=055|
+[2026-05-05 09:52:32] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=12|49=SERVER|52=20260505-02:52:32.306|56=f2c11b00bf3d41fca072225f328ce98e|10=186|
+[2026-05-05 09:53:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:53:02] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=11|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:53:02.000|56=SERVER|1=main|553=Group13|10=054|
+[2026-05-05 09:53:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 09:53:02] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 09:53:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:53:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 09:53:02] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=270900000.0
+[2026-05-05 09:53:02] [DEBUG] [TO APP] 8=FIX.4.4|9=187|35=D|34=12|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:53:02.000|56=SERVER|1=main|11=22f200f8|38=1|40=2|44=2010.8|54=1|55=VN30F2604|59=1|60=20260505-02:53:02|207=HNXDS|553=Group13|10=071|
+[2026-05-05 09:53:02] [INFO] [ORDER] Sent new order: 22f200f8
+[2026-05-05 09:53:02] [DEBUG] No handlers registered for event 'fix:order:submit'
+[2026-05-05 09:53:02] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=13|49=SERVER|52=20260505-02:53:02.325|56=f2c11b00bf3d41fca072225f328ce98e|10=186|
+[2026-05-05 09:53:02] [INFO] [FROM APP] 8=FIX.4.4|9=285|35=8|34=14|49=SERVER|52=20260505-02:53:02.690|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=22f200f8|14=0|17=cf580e3c-255d-4b81-93c7-612c0742a550|37=9ec479af-bd5f-4ec7-a98f-bae863fc7d51|38=1|39=A|40=2|44=2010.8|54=1|55=VN30F2604|59=1|60=20260505-02:53:02.689|150=A|151=1|207=HNXDS|10=252|
+[2026-05-05 09:53:02] [INFO] [PENDING_NEW] 22f200f8 at 2026-05-05T02:53:02.689000+00:00
+[2026-05-05 09:53:02] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 09:53:02] [DEBUG] No handlers registered for event 'fix:order:pending_new'
+[2026-05-05 09:53:02] [INFO] [FROM APP] 8=FIX.4.4|9=285|35=8|34=15|49=SERVER|52=20260505-02:53:02.730|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=22f200f8|14=0|17=e3f0d039-22dd-40da-bce1-54d413b9ac4b|37=9ec479af-bd5f-4ec7-a98f-bae863fc7d51|38=1|39=0|40=2|44=2010.8|54=1|55=VN30F2604|59=1|60=20260505-02:53:02.729|150=0|151=1|207=HNXDS|10=223|
+[2026-05-05 09:53:02] [INFO] [NEW] Order 22f200f8 accepted at 2026-05-05T02:53:02.729000+00:00
+[2026-05-05 09:53:02] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 09:53:02] [DEBUG] No handlers registered for event 'fix:order:accepted'
+[2026-05-05 09:53:44] [INFO] Session created: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-05-05 09:53:44] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_mx8pfe1_.cfg username=Group13
+[2026-05-05 09:53:44] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-05-05 09:53:44] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-05-05 09:53:44] [DEBUG] Registered handler for event 'fix:execution_report'. Total handlers: 2
+[2026-05-05 09:53:44] [DEBUG] Registered handler for event 'fix:order:report'. Total handlers: 3
+[2026-05-05 09:53:44] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-05-05 09:53:45] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-05-05 09:53:45] [INFO] event=fix_id_resolved username=Group13 fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b
+[2026-05-05 09:53:45] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:53:45] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 09:53:45] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 09:53:45] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:53:45] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 09:53:45] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=220610000.0
+[2026-05-05 09:53:45] [INFO] Starting FIX session...
+[2026-05-05 09:53:45] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=135|35=A|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:53:45.000|56=SERVER|1=main|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=119|
+[2026-05-05 09:53:45] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260505-02:53:46.016|56=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|10=235|
+[2026-05-05 09:53:45] [INFO] Logon success: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-05-05 09:53:45] [INFO] Order manager session set: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-05-05 09:53:45] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-05-05 09:53:47] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:53:48] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 09:53:48] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 09:53:48] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:53:48] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 09:53:48] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=220610000.0
+[2026-05-05 09:53:48] [DEBUG] [TO APP] 8=FIX.4.4|9=184|35=D|34=2|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:53:48.000|56=SERVER|1=main|11=0aec0fee|38=1|40=2|44=2011|54=1|55=VN30F2605|59=1|60=20260505-02:53:48|207=HNXDS|553=Group13|10=130|
+[2026-05-05 09:53:48] [INFO] [ORDER] Sent new order: 0aec0fee
+[2026-05-05 09:53:48] [DEBUG] No handlers registered for event 'fix:order:submit'
+[2026-05-05 09:53:48] [INFO] [FROM APP] 8=FIX.4.4|9=282|35=8|34=2|49=SERVER|52=20260505-02:53:48.380|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=0aec0fee|14=0|17=c42cfd3d-0af2-489c-8ae1-735ae940b7c3|37=03c3adf7-5be3-43bf-86f9-a0e9dc5c4fa7|38=1|39=A|40=2|44=2011|54=1|55=VN30F2605|59=1|60=20260505-02:53:48.379|150=A|151=1|207=HNXDS|10=220|
+[2026-05-05 09:53:48] [INFO] [PENDING_NEW] 0aec0fee at 2026-05-05T02:53:48.379000+00:00
+[2026-05-05 09:53:48] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 09:53:48] [DEBUG] No handlers registered for event 'fix:order:pending_new'
+[2026-05-05 09:53:48] [INFO] [FROM APP] 8=FIX.4.4|9=282|35=8|34=3|49=SERVER|52=20260505-02:53:48.414|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=0aec0fee|14=0|17=674abbac-f53f-43b3-8e94-9f05fabae122|37=03c3adf7-5be3-43bf-86f9-a0e9dc5c4fa7|38=1|39=0|40=2|44=2011|54=1|55=VN30F2605|59=1|60=20260505-02:53:48.413|150=0|151=1|207=HNXDS|10=220|
+[2026-05-05 09:53:48] [INFO] [NEW] Order 0aec0fee accepted at 2026-05-05T02:53:48.413000+00:00
+[2026-05-05 09:53:48] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 09:53:48] [DEBUG] No handlers registered for event 'fix:order:accepted'
+[2026-05-05 09:53:48] [INFO] [FROM APP] 8=FIX.4.4|9=304|35=8|34=4|49=SERVER|52=20260505-02:53:48.679|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=2010.6|11=0aec0fee|14=1|17=d80193f8-72c0-4d97-8402-635d69feeb95|31=2010.6|32=1|37=03c3adf7-5be3-43bf-86f9-a0e9dc5c4fa7|38=1|39=2|40=2|44=2010.6|54=1|55=VN30F2605|59=1|60=20260505-02:53:46.000|150=F|151=0|207=HNXDS|10=232|
+[2026-05-05 09:53:48] [INFO] [TRADE] 0aec0fee: Traded 1.0 @ 2010.6 at 2026-05-05T02:53:46+00:00 (OrdStatus=2)
+[2026-05-05 09:53:48] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 09:53:48] [DEBUG] No handlers registered for event 'fix:order:filled'
+[2026-05-05 09:54:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:54:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 09:54:01] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 09:54:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:54:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 09:54:01] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170325000.0
+[2026-05-05 09:54:18] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=3|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:54:18.000|56=SERVER|1=main|553=Group13|10=014|
+[2026-05-05 09:54:19] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=5|49=SERVER|52=20260505-02:54:19.326|56=f2c11b00bf3d41fca072225f328ce98e|10=148|
+[2026-05-05 09:54:48] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=4|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:54:48.000|56=SERVER|1=main|553=Group13|10=018|
+[2026-05-05 09:54:49] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=6|49=SERVER|52=20260505-02:54:49.326|56=f2c11b00bf3d41fca072225f328ce98e|10=152|
+[2026-05-05 09:55:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:55:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 09:55:01] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 09:55:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:55:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 09:55:01] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170325000.0
+[2026-05-05 09:55:18] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=5|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:55:18.000|56=SERVER|1=main|553=Group13|10=017|
+[2026-05-05 09:55:19] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=7|49=SERVER|52=20260505-02:55:19.326|56=f2c11b00bf3d41fca072225f328ce98e|10=151|
+[2026-05-05 09:55:48] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=6|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:55:48.000|56=SERVER|1=main|553=Group13|10=021|
+[2026-05-05 09:55:49] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=8|49=SERVER|52=20260505-02:55:49.326|56=f2c11b00bf3d41fca072225f328ce98e|10=155|
+[2026-05-05 09:56:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:56:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 09:56:01] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 09:56:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:56:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 09:56:02] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170325000.0
+[2026-05-05 09:56:18] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=7|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:56:18.000|56=SERVER|1=main|553=Group13|10=020|
+[2026-05-05 09:56:19] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=9|49=SERVER|52=20260505-02:56:19.328|56=f2c11b00bf3d41fca072225f328ce98e|10=156|
+[2026-05-05 09:56:48] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=8|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:56:48.000|56=SERVER|1=main|553=Group13|10=024|
+[2026-05-05 09:56:49] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=10|49=SERVER|52=20260505-02:56:49.325|56=f2c11b00bf3d41fca072225f328ce98e|10=197|
+[2026-05-05 09:57:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:57:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 09:57:01] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 09:57:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:57:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 09:57:01] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170325000.0
+[2026-05-05 09:57:18] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=9|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:57:18.000|56=SERVER|1=main|553=Group13|10=023|
+[2026-05-05 09:57:19] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=11|49=SERVER|52=20260505-02:57:19.327|56=f2c11b00bf3d41fca072225f328ce98e|10=198|
+[2026-05-05 09:57:48] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=10|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:57:48.000|56=SERVER|1=main|553=Group13|10=067|
+[2026-05-05 09:57:49] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=12|49=SERVER|52=20260505-02:57:49.326|56=f2c11b00bf3d41fca072225f328ce98e|10=201|
+[2026-05-05 09:58:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:58:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 09:58:02] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 09:58:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 09:58:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 09:58:02] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170325000.0
+[2026-05-05 09:58:02] [DEBUG] [TO APP] 8=FIX.4.4|9=185|35=D|34=11|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:58:02.000|56=SERVER|1=main|11=9ef8e081|38=1|40=2|44=2009|54=2|55=VN30F2605|59=1|60=20260505-02:58:02|207=HNXDS|553=Group13|10=050|
+[2026-05-05 09:58:02] [INFO] [ORDER] Sent new order: 9ef8e081
+[2026-05-05 09:58:02] [DEBUG] No handlers registered for event 'fix:order:submit'
+[2026-05-05 09:58:02] [INFO] [FROM APP] 8=FIX.4.4|9=283|35=8|34=13|49=SERVER|52=20260505-02:58:02.391|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=9ef8e081|14=0|17=5d9fd230-6686-4c2c-9deb-a01177024018|37=e399637e-321c-48ae-bd18-a4a85df0a3bc|38=1|39=A|40=2|44=2009|54=2|55=VN30F2605|59=1|60=20260505-02:58:02.391|150=A|151=1|207=HNXDS|10=048|
+[2026-05-05 09:58:02] [INFO] [PENDING_NEW] 9ef8e081 at 2026-05-05T02:58:02.391000+00:00
+[2026-05-05 09:58:02] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 09:58:02] [DEBUG] No handlers registered for event 'fix:order:pending_new'
+[2026-05-05 09:58:02] [INFO] [FROM APP] 8=FIX.4.4|9=283|35=8|34=14|49=SERVER|52=20260505-02:58:02.435|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=9ef8e081|14=0|17=d69f0c9c-8377-4610-bdf5-55069910e179|37=e399637e-321c-48ae-bd18-a4a85df0a3bc|38=1|39=0|40=2|44=2009|54=2|55=VN30F2605|59=1|60=20260505-02:58:02.433|150=0|151=1|207=HNXDS|10=246|
+[2026-05-05 09:58:02] [INFO] [NEW] Order 9ef8e081 accepted at 2026-05-05T02:58:02.433000+00:00
+[2026-05-05 09:58:02] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 09:58:02] [DEBUG] No handlers registered for event 'fix:order:accepted'
+[2026-05-05 09:58:03] [INFO] [FROM APP] 8=FIX.4.4|9=305|35=8|34=15|49=SERVER|52=20260505-02:58:03.293|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=2009.1|11=9ef8e081|14=1|17=7a449b67-2459-4043-a9d9-de4c2363fa1b|31=2009.1|32=1|37=e399637e-321c-48ae-bd18-a4a85df0a3bc|38=1|39=2|40=2|44=2009.1|54=2|55=VN30F2605|59=1|60=20260505-02:58:01.000|150=F|151=0|207=HNXDS|10=075|
+[2026-05-05 09:58:03] [INFO] [TRADE] 9ef8e081: Traded 1.0 @ 2009.1 at 2026-05-05T02:58:01+00:00 (OrdStatus=2)
+[2026-05-05 09:58:03] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 09:58:03] [DEBUG] No handlers registered for event 'fix:order:filled'
+[2026-05-05 09:58:32] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=12|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-02:58:32.000|56=SERVER|1=main|553=Group13|10=063|
+[2026-05-05 09:58:33] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=16|49=SERVER|52=20260505-02:58:33.325|56=f2c11b00bf3d41fca072225f328ce98e|10=198|
+[2026-05-05 10:05:47] [INFO] Session created: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-05-05 10:05:47] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_wkx1pzbq.cfg username=Group13
+[2026-05-05 10:05:47] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-05-05 10:05:47] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-05-05 10:05:47] [DEBUG] Registered handler for event 'fix:execution_report'. Total handlers: 2
+[2026-05-05 10:05:47] [DEBUG] Registered handler for event 'fix:order:report'. Total handlers: 3
+[2026-05-05 10:05:47] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-05-05 10:05:47] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-05-05 10:05:47] [INFO] event=fix_id_resolved username=Group13 fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b
+[2026-05-05 10:05:47] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:05:47] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:05:47] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 10:05:47] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:05:47] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:05:47] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=220420000.0
+[2026-05-05 10:05:47] [INFO] Starting FIX session...
+[2026-05-05 10:05:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=135|35=A|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:05:47.000|56=SERVER|1=main|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=119|
+[2026-05-05 10:05:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260505-03:05:48.520|56=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|10=235|
+[2026-05-05 10:05:48] [INFO] Logon success: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-05-05 10:05:48] [INFO] Order manager session set: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-05-05 10:05:48] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-05-05 10:05:50] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:05:50] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:05:50] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 10:05:50] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:05:51] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:05:51] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=220420000.0
+[2026-05-05 10:05:51] [DEBUG] [TO APP] 8=FIX.4.4|9=184|35=D|34=2|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:05:51.000|56=SERVER|1=main|11=38e938e4|38=1|40=2|44=2007|54=2|55=VN30F2605|59=1|60=20260505-03:05:51|207=HNXDS|553=Group13|10=204|
+[2026-05-05 10:05:51] [INFO] [ORDER] Sent new order: 38e938e4
+[2026-05-05 10:05:51] [DEBUG] No handlers registered for event 'fix:order:submit'
+[2026-05-05 10:05:51] [INFO] [FROM APP] 8=FIX.4.4|9=282|35=8|34=2|49=SERVER|52=20260505-03:05:51.256|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=38e938e4|14=0|17=3003382a-168d-4ac4-b38a-ae916d97fc75|37=a27ceca1-1e8f-4095-ba12-982f76ca7846|38=1|39=A|40=2|44=2007|54=2|55=VN30F2605|59=1|60=20260505-03:05:51.255|150=A|151=1|207=HNXDS|10=211|
+[2026-05-05 10:05:51] [INFO] [PENDING_NEW] 38e938e4 at 2026-05-05T03:05:51.255000+00:00
+[2026-05-05 10:05:51] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 10:05:51] [DEBUG] No handlers registered for event 'fix:order:pending_new'
+[2026-05-05 10:05:51] [INFO] [FROM APP] 8=FIX.4.4|9=282|35=8|34=3|49=SERVER|52=20260505-03:05:51.292|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=38e938e4|14=0|17=5d7a9798-22f8-49a7-8e4e-8815e165205b|37=a27ceca1-1e8f-4095-ba12-982f76ca7846|38=1|39=0|40=2|44=2007|54=2|55=VN30F2605|59=1|60=20260505-03:05:51.291|150=0|151=1|207=HNXDS|10=065|
+[2026-05-05 10:05:51] [INFO] [NEW] Order 38e938e4 accepted at 2026-05-05T03:05:51.291000+00:00
+[2026-05-05 10:05:51] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 10:05:51] [DEBUG] No handlers registered for event 'fix:order:accepted'
+[2026-05-05 10:05:51] [INFO] [FROM APP] 8=FIX.4.4|9=304|35=8|34=4|49=SERVER|52=20260505-03:05:51.804|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=2007.1|11=38e938e4|14=1|17=a6415aed-e0d4-4cdd-ae52-5375b8985885|31=2007.1|32=1|37=a27ceca1-1e8f-4095-ba12-982f76ca7846|38=1|39=2|40=2|44=2007.1|54=2|55=VN30F2605|59=1|60=20260505-03:05:50.000|150=F|151=0|207=HNXDS|10=234|
+[2026-05-05 10:05:51] [INFO] [TRADE] 38e938e4: Traded 1.0 @ 2007.1 at 2026-05-05T03:05:50+00:00 (OrdStatus=2)
+[2026-05-05 10:05:51] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 10:05:51] [DEBUG] No handlers registered for event 'fix:order:filled'
+[2026-05-05 10:06:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:06:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:06:01] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:06:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:06:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:06:01] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:06:21] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=3|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:06:21.000|56=SERVER|1=main|553=Group13|10=006|
+[2026-05-05 10:06:22] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=5|49=SERVER|52=20260505-03:06:22.325|56=f2c11b00bf3d41fca072225f328ce98e|10=139|
+[2026-05-05 10:06:51] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=4|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:06:51.000|56=SERVER|1=main|553=Group13|10=010|
+[2026-05-05 10:06:52] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=6|49=SERVER|52=20260505-03:06:52.325|56=f2c11b00bf3d41fca072225f328ce98e|10=143|
+[2026-05-05 10:07:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:07:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:07:02] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:07:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:07:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:07:02] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:07:21] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=5|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:07:21.000|56=SERVER|1=main|553=Group13|10=009|
+[2026-05-05 10:07:22] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=7|49=SERVER|52=20260505-03:07:22.325|56=f2c11b00bf3d41fca072225f328ce98e|10=142|
+[2026-05-05 10:07:51] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=6|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:07:51.000|56=SERVER|1=main|553=Group13|10=013|
+[2026-05-05 10:07:52] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=8|49=SERVER|52=20260505-03:07:52.325|56=f2c11b00bf3d41fca072225f328ce98e|10=146|
+[2026-05-05 10:08:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:08:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:08:01] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:08:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:08:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:08:01] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:08:21] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=7|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:08:21.000|56=SERVER|1=main|553=Group13|10=012|
+[2026-05-05 10:08:22] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=9|49=SERVER|52=20260505-03:08:22.326|56=f2c11b00bf3d41fca072225f328ce98e|10=146|
+[2026-05-05 10:08:51] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=8|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:08:51.000|56=SERVER|1=main|553=Group13|10=016|
+[2026-05-05 10:08:52] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=10|49=SERVER|52=20260505-03:08:52.325|56=f2c11b00bf3d41fca072225f328ce98e|10=189|
+[2026-05-05 10:09:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:09:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:09:01] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:09:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:09:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:09:01] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:09:21] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=9|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:09:21.000|56=SERVER|1=main|553=Group13|10=015|
+[2026-05-05 10:09:22] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=11|49=SERVER|52=20260505-03:09:22.325|56=f2c11b00bf3d41fca072225f328ce98e|10=188|
+[2026-05-05 10:09:51] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=10|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:09:51.000|56=SERVER|1=main|553=Group13|10=059|
+[2026-05-05 10:09:52] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=12|49=SERVER|52=20260505-03:09:52.326|56=f2c11b00bf3d41fca072225f328ce98e|10=193|
+[2026-05-05 10:10:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:10:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:10:01] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:10:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:10:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:10:01] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:10:21] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=11|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:10:21.000|56=SERVER|1=main|553=Group13|10=049|
+[2026-05-05 10:10:28] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=110|35=1|34=12|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:10:28.000|56=SERVER|1=main|112=TEST|553=Group13|10=076|
+[2026-05-05 10:10:40] [INFO] Logged out: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-05-05 10:10:40] [DEBUG] No handlers registered for event 'fix:logout'
+[2026-05-05 10:10:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=135|35=A|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:10:47.000|56=SERVER|1=main|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=115|
+[2026-05-05 10:10:47] [INFO] Logged out: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-05-05 10:10:47] [DEBUG] No handlers registered for event 'fix:logout'
+[2026-05-05 10:11:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:11:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:11:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:11:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:11:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:11:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:11:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=135|35=A|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:11:17.000|56=SERVER|1=main|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=113|
+[2026-05-05 10:11:17] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260505-03:11:17.667|56=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|10=240|
+[2026-05-05 10:11:17] [INFO] Logon success: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-05-05 10:11:17] [INFO] Order manager session set: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-05-05 10:11:17] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-05-05 10:11:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=2|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:11:47.000|56=SERVER|1=main|553=Group13|10=009|
+[2026-05-05 10:11:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=2|49=SERVER|52=20260505-03:11:48.326|56=f2c11b00bf3d41fca072225f328ce98e|10=141|
+[2026-05-05 10:12:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:12:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:12:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:12:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:12:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:12:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:12:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=3|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:12:17.000|56=SERVER|1=main|553=Group13|10=008|
+[2026-05-05 10:12:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=3|49=SERVER|52=20260505-03:12:18.327|56=f2c11b00bf3d41fca072225f328ce98e|10=141|
+[2026-05-05 10:12:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=4|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:12:47.000|56=SERVER|1=main|553=Group13|10=012|
+[2026-05-05 10:12:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=4|49=SERVER|52=20260505-03:12:48.325|56=f2c11b00bf3d41fca072225f328ce98e|10=143|
+[2026-05-05 10:13:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:13:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:13:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:13:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:13:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:13:04] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:13:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=5|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:13:17.000|56=SERVER|1=main|553=Group13|10=011|
+[2026-05-05 10:13:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=5|49=SERVER|52=20260505-03:13:18.326|56=f2c11b00bf3d41fca072225f328ce98e|10=143|
+[2026-05-05 10:13:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=6|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:13:47.000|56=SERVER|1=main|553=Group13|10=015|
+[2026-05-05 10:13:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=6|49=SERVER|52=20260505-03:13:48.326|56=f2c11b00bf3d41fca072225f328ce98e|10=147|
+[2026-05-05 10:14:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:14:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:14:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:14:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:14:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:14:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:14:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=7|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:14:17.000|56=SERVER|1=main|553=Group13|10=014|
+[2026-05-05 10:14:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=7|49=SERVER|52=20260505-03:14:18.326|56=f2c11b00bf3d41fca072225f328ce98e|10=146|
+[2026-05-05 10:14:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=8|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:14:47.000|56=SERVER|1=main|553=Group13|10=018|
+[2026-05-05 10:14:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=8|49=SERVER|52=20260505-03:14:48.325|56=f2c11b00bf3d41fca072225f328ce98e|10=149|
+[2026-05-05 10:15:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:15:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:15:02] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:15:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:15:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:15:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:15:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=9|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:15:17.000|56=SERVER|1=main|553=Group13|10=017|
+[2026-05-05 10:15:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=9|49=SERVER|52=20260505-03:15:18.326|56=f2c11b00bf3d41fca072225f328ce98e|10=149|
+[2026-05-05 10:15:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=10|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:15:47.000|56=SERVER|1=main|553=Group13|10=061|
+[2026-05-05 10:15:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=10|49=SERVER|52=20260505-03:15:48.325|56=f2c11b00bf3d41fca072225f328ce98e|10=192|
+[2026-05-05 10:16:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:16:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:16:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:16:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:16:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:16:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:16:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=11|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:16:17.000|56=SERVER|1=main|553=Group13|10=060|
+[2026-05-05 10:16:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=11|49=SERVER|52=20260505-03:16:18.326|56=f2c11b00bf3d41fca072225f328ce98e|10=192|
+[2026-05-05 10:16:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=12|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:16:47.000|56=SERVER|1=main|553=Group13|10=064|
+[2026-05-05 10:16:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=12|49=SERVER|52=20260505-03:16:48.326|56=f2c11b00bf3d41fca072225f328ce98e|10=196|
+[2026-05-05 10:17:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:17:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:17:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:17:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:17:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:17:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:17:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=13|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:17:17.000|56=SERVER|1=main|553=Group13|10=063|
+[2026-05-05 10:17:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=13|49=SERVER|52=20260505-03:17:18.327|56=f2c11b00bf3d41fca072225f328ce98e|10=196|
+[2026-05-05 10:17:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=14|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:17:47.000|56=SERVER|1=main|553=Group13|10=067|
+[2026-05-05 10:17:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=14|49=SERVER|52=20260505-03:17:48.326|56=f2c11b00bf3d41fca072225f328ce98e|10=199|
+[2026-05-05 10:18:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:18:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:18:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:18:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:18:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:18:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:18:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=15|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:18:17.000|56=SERVER|1=main|553=Group13|10=066|
+[2026-05-05 10:18:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=15|49=SERVER|52=20260505-03:18:18.325|56=f2c11b00bf3d41fca072225f328ce98e|10=197|
+[2026-05-05 10:18:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=16|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:18:47.000|56=SERVER|1=main|553=Group13|10=070|
+[2026-05-05 10:18:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=16|49=SERVER|52=20260505-03:18:48.326|56=f2c11b00bf3d41fca072225f328ce98e|10=202|
+[2026-05-05 10:19:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:19:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:19:04] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:19:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:19:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:19:04] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:19:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=17|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:19:17.000|56=SERVER|1=main|553=Group13|10=069|
+[2026-05-05 10:19:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=17|49=SERVER|52=20260505-03:19:18.326|56=f2c11b00bf3d41fca072225f328ce98e|10=201|
+[2026-05-05 10:19:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=18|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:19:47.000|56=SERVER|1=main|553=Group13|10=073|
+[2026-05-05 10:19:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=18|49=SERVER|52=20260505-03:19:48.326|56=f2c11b00bf3d41fca072225f328ce98e|10=205|
+[2026-05-05 10:20:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:20:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:20:02] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:20:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:20:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:20:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:20:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=19|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:20:17.000|56=SERVER|1=main|553=Group13|10=063|
+[2026-05-05 10:20:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=19|49=SERVER|52=20260505-03:20:18.326|56=f2c11b00bf3d41fca072225f328ce98e|10=195|
+[2026-05-05 10:20:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=20|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:20:47.000|56=SERVER|1=main|553=Group13|10=058|
+[2026-05-05 10:20:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=20|49=SERVER|52=20260505-03:20:48.325|56=f2c11b00bf3d41fca072225f328ce98e|10=189|
+[2026-05-05 10:21:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:21:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:21:02] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:21:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:21:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:21:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:21:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=21|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:21:17.000|56=SERVER|1=main|553=Group13|10=057|
+[2026-05-05 10:21:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=21|49=SERVER|52=20260505-03:21:18.326|56=f2c11b00bf3d41fca072225f328ce98e|10=189|
+[2026-05-05 10:21:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=22|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:21:47.000|56=SERVER|1=main|553=Group13|10=061|
+[2026-05-05 10:21:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=22|49=SERVER|52=20260505-03:21:48.326|56=f2c11b00bf3d41fca072225f328ce98e|10=193|
+[2026-05-05 10:22:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:22:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:22:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:22:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:22:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:22:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:22:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=23|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:22:17.000|56=SERVER|1=main|553=Group13|10=060|
+[2026-05-05 10:22:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=23|49=SERVER|52=20260505-03:22:18.326|56=f2c11b00bf3d41fca072225f328ce98e|10=192|
+[2026-05-05 10:22:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=24|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:22:47.000|56=SERVER|1=main|553=Group13|10=064|
+[2026-05-05 10:22:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=24|49=SERVER|52=20260505-03:22:48.326|56=f2c11b00bf3d41fca072225f328ce98e|10=196|
+[2026-05-05 10:23:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:23:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:23:02] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:23:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:23:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:23:02] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:23:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=25|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:23:17.000|56=SERVER|1=main|553=Group13|10=063|
+[2026-05-05 10:23:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=25|49=SERVER|52=20260505-03:23:18.326|56=f2c11b00bf3d41fca072225f328ce98e|10=195|
+[2026-05-05 10:23:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=26|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:23:47.000|56=SERVER|1=main|553=Group13|10=067|
+[2026-05-05 10:23:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=26|49=SERVER|52=20260505-03:23:48.326|56=f2c11b00bf3d41fca072225f328ce98e|10=199|
+[2026-05-05 10:24:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:24:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:24:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:24:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:24:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:24:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:24:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=27|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:24:17.000|56=SERVER|1=main|553=Group13|10=066|
+[2026-05-05 10:24:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=27|49=SERVER|52=20260505-03:24:18.326|56=f2c11b00bf3d41fca072225f328ce98e|10=198|
+[2026-05-05 10:24:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=28|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:24:47.000|56=SERVER|1=main|553=Group13|10=070|
+[2026-05-05 10:24:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=28|49=SERVER|52=20260505-03:24:48.325|56=f2c11b00bf3d41fca072225f328ce98e|10=201|
+[2026-05-05 10:25:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:25:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:25:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:25:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:25:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:25:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:25:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=29|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:25:17.000|56=SERVER|1=main|553=Group13|10=069|
+[2026-05-05 10:25:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=29|49=SERVER|52=20260505-03:25:18.326|56=f2c11b00bf3d41fca072225f328ce98e|10=201|
+[2026-05-05 10:25:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=30|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:25:47.000|56=SERVER|1=main|553=Group13|10=064|
+[2026-05-05 10:25:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=30|49=SERVER|52=20260505-03:25:48.327|56=f2c11b00bf3d41fca072225f328ce98e|10=197|
+[2026-05-05 10:26:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:26:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:26:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:26:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:26:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:26:04] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:26:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=31|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:26:17.000|56=SERVER|1=main|553=Group13|10=063|
+[2026-05-05 10:26:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=31|49=SERVER|52=20260505-03:26:18.326|56=f2c11b00bf3d41fca072225f328ce98e|10=195|
+[2026-05-05 10:26:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=32|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:26:47.000|56=SERVER|1=main|553=Group13|10=067|
+[2026-05-05 10:26:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=32|49=SERVER|52=20260505-03:26:48.326|56=f2c11b00bf3d41fca072225f328ce98e|10=199|
+[2026-05-05 10:27:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:27:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:27:02] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:27:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:27:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:27:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:27:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=33|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:27:17.000|56=SERVER|1=main|553=Group13|10=066|
+[2026-05-05 10:27:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=33|49=SERVER|52=20260505-03:27:18.325|56=f2c11b00bf3d41fca072225f328ce98e|10=197|
+[2026-05-05 10:27:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=34|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:27:47.000|56=SERVER|1=main|553=Group13|10=070|
+[2026-05-05 10:27:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=34|49=SERVER|52=20260505-03:27:48.325|56=f2c11b00bf3d41fca072225f328ce98e|10=201|
+[2026-05-05 10:28:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:28:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:28:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:28:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:28:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:28:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:28:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=35|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:28:17.000|56=SERVER|1=main|553=Group13|10=069|
+[2026-05-05 10:28:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=35|49=SERVER|52=20260505-03:28:18.326|56=f2c11b00bf3d41fca072225f328ce98e|10=201|
+[2026-05-05 10:28:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=36|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:28:47.000|56=SERVER|1=main|553=Group13|10=073|
+[2026-05-05 10:28:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=36|49=SERVER|52=20260505-03:28:48.325|56=f2c11b00bf3d41fca072225f328ce98e|10=204|
+[2026-05-05 10:29:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:29:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:29:02] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:29:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:29:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:29:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:29:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=37|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:29:17.000|56=SERVER|1=main|553=Group13|10=072|
+[2026-05-05 10:29:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=37|49=SERVER|52=20260505-03:29:18.325|56=f2c11b00bf3d41fca072225f328ce98e|10=203|
+[2026-05-05 10:29:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=38|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:29:47.000|56=SERVER|1=main|553=Group13|10=076|
+[2026-05-05 10:29:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=38|49=SERVER|52=20260505-03:29:48.326|56=f2c11b00bf3d41fca072225f328ce98e|10=208|
+[2026-05-05 10:30:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:30:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:30:02] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:30:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:30:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:30:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:30:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=39|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:30:17.000|56=SERVER|1=main|553=Group13|10=066|
+[2026-05-05 10:30:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=39|49=SERVER|52=20260505-03:30:18.326|56=f2c11b00bf3d41fca072225f328ce98e|10=198|
+[2026-05-05 10:30:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=40|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:30:47.000|56=SERVER|1=main|553=Group13|10=061|
+[2026-05-05 10:30:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=40|49=SERVER|52=20260505-03:30:48.326|56=f2c11b00bf3d41fca072225f328ce98e|10=193|
+[2026-05-05 10:31:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:31:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:31:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:31:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:31:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:31:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:31:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=41|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:31:17.000|56=SERVER|1=main|553=Group13|10=060|
+[2026-05-05 10:31:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=41|49=SERVER|52=20260505-03:31:18.326|56=f2c11b00bf3d41fca072225f328ce98e|10=192|
+[2026-05-05 10:31:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=42|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:31:47.000|56=SERVER|1=main|553=Group13|10=064|
+[2026-05-05 10:31:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=42|49=SERVER|52=20260505-03:31:48.326|56=f2c11b00bf3d41fca072225f328ce98e|10=196|
+[2026-05-05 10:32:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:32:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:32:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:32:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:32:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:32:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:32:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=43|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:32:17.000|56=SERVER|1=main|553=Group13|10=063|
+[2026-05-05 10:32:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=43|49=SERVER|52=20260505-03:32:18.326|56=f2c11b00bf3d41fca072225f328ce98e|10=195|
+[2026-05-05 10:32:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=44|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:32:47.000|56=SERVER|1=main|553=Group13|10=067|
+[2026-05-05 10:32:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=44|49=SERVER|52=20260505-03:32:48.325|56=f2c11b00bf3d41fca072225f328ce98e|10=198|
+[2026-05-05 10:33:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:33:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:33:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:33:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:33:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:33:04] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:33:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=45|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:33:17.000|56=SERVER|1=main|553=Group13|10=066|
+[2026-05-05 10:33:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=45|49=SERVER|52=20260505-03:33:18.325|56=f2c11b00bf3d41fca072225f328ce98e|10=197|
+[2026-05-05 10:33:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=46|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:33:47.000|56=SERVER|1=main|553=Group13|10=070|
+[2026-05-05 10:33:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=46|49=SERVER|52=20260505-03:33:48.326|56=f2c11b00bf3d41fca072225f328ce98e|10=202|
+[2026-05-05 10:34:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:34:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:34:02] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:34:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:34:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:34:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:34:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=47|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:34:17.000|56=SERVER|1=main|553=Group13|10=069|
+[2026-05-05 10:34:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=47|49=SERVER|52=20260505-03:34:18.326|56=f2c11b00bf3d41fca072225f328ce98e|10=201|
+[2026-05-05 10:34:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=48|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:34:47.000|56=SERVER|1=main|553=Group13|10=073|
+[2026-05-05 10:34:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=48|49=SERVER|52=20260505-03:34:48.325|56=f2c11b00bf3d41fca072225f328ce98e|10=204|
+[2026-05-05 10:35:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:35:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:35:04] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:35:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:35:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:35:04] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:35:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=49|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:35:17.000|56=SERVER|1=main|553=Group13|10=072|
+[2026-05-05 10:35:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=49|49=SERVER|52=20260505-03:35:18.326|56=f2c11b00bf3d41fca072225f328ce98e|10=204|
+[2026-05-05 10:35:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=50|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:35:47.000|56=SERVER|1=main|553=Group13|10=067|
+[2026-05-05 10:35:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=50|49=SERVER|52=20260505-03:35:48.325|56=f2c11b00bf3d41fca072225f328ce98e|10=198|
+[2026-05-05 10:36:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:36:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:36:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:36:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:36:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:36:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:36:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=51|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:36:17.000|56=SERVER|1=main|553=Group13|10=066|
+[2026-05-05 10:36:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=51|49=SERVER|52=20260505-03:36:18.326|56=f2c11b00bf3d41fca072225f328ce98e|10=198|
+[2026-05-05 10:36:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=52|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:36:47.000|56=SERVER|1=main|553=Group13|10=070|
+[2026-05-05 10:36:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=52|49=SERVER|52=20260505-03:36:48.326|56=f2c11b00bf3d41fca072225f328ce98e|10=202|
+[2026-05-05 10:37:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:37:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:37:04] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:37:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:37:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:37:04] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:37:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=53|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:37:17.000|56=SERVER|1=main|553=Group13|10=069|
+[2026-05-05 10:37:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=53|49=SERVER|52=20260505-03:37:18.326|56=f2c11b00bf3d41fca072225f328ce98e|10=201|
+[2026-05-05 10:37:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=54|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:37:47.000|56=SERVER|1=main|553=Group13|10=073|
+[2026-05-05 10:37:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=54|49=SERVER|52=20260505-03:37:48.325|56=f2c11b00bf3d41fca072225f328ce98e|10=204|
+[2026-05-05 10:38:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:38:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:38:04] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:38:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:38:05] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:38:05] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:38:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=55|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:38:17.000|56=SERVER|1=main|553=Group13|10=072|
+[2026-05-05 10:38:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=55|49=SERVER|52=20260505-03:38:18.326|56=f2c11b00bf3d41fca072225f328ce98e|10=204|
+[2026-05-05 10:38:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=56|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:38:47.000|56=SERVER|1=main|553=Group13|10=076|
+[2026-05-05 10:38:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=56|49=SERVER|52=20260505-03:38:48.326|56=f2c11b00bf3d41fca072225f328ce98e|10=208|
+[2026-05-05 10:39:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:39:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:39:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:39:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:39:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:39:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:39:17] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=57|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:39:17.000|56=SERVER|1=main|553=Group13|10=075|
+[2026-05-05 10:39:18] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=57|49=SERVER|52=20260505-03:39:18.326|56=f2c11b00bf3d41fca072225f328ce98e|10=207|
+[2026-05-05 10:39:47] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=58|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:39:47.000|56=SERVER|1=main|553=Group13|10=079|
+[2026-05-05 10:39:48] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=58|49=SERVER|52=20260505-03:39:48.327|56=f2c11b00bf3d41fca072225f328ce98e|10=212|
+[2026-05-05 10:40:05] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:40:05] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:40:05] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:40:05] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:40:05] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:40:05] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=170222500.0
+[2026-05-05 10:40:05] [DEBUG] [TO APP] 8=FIX.4.4|9=187|35=D|34=59|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:40:05.000|56=SERVER|1=main|11=fbfc58c5|38=1|40=2|44=2010.3|54=1|55=VN30F2605|59=1|60=20260505-03:40:05|207=HNXDS|553=Group13|10=234|
+[2026-05-05 10:40:05] [INFO] [ORDER] Sent new order: fbfc58c5
+[2026-05-05 10:40:05] [DEBUG] No handlers registered for event 'fix:order:submit'
+[2026-05-05 10:40:05] [INFO] [FROM APP] 8=FIX.4.4|9=285|35=8|34=59|49=SERVER|52=20260505-03:40:05.784|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=fbfc58c5|14=0|17=de8e904a-e93f-4f31-9a59-b0376f06440b|37=8324ea20-3c6f-4a96-b06e-c521eecf6bf3|38=1|39=A|40=2|44=2010.3|54=1|55=VN30F2605|59=1|60=20260505-03:40:05.782|150=A|151=1|207=HNXDS|10=090|
+[2026-05-05 10:40:05] [INFO] [PENDING_NEW] fbfc58c5 at 2026-05-05T03:40:05.782000+00:00
+[2026-05-05 10:40:05] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 10:40:05] [DEBUG] No handlers registered for event 'fix:order:pending_new'
+[2026-05-05 10:40:05] [INFO] [FROM APP] 8=FIX.4.4|9=285|35=8|34=60|49=SERVER|52=20260505-03:40:05.831|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=fbfc58c5|14=0|17=26484694-2017-4396-b827-0a1812264e8d|37=8324ea20-3c6f-4a96-b06e-c521eecf6bf3|38=1|39=0|40=2|44=2010.3|54=1|55=VN30F2605|59=1|60=20260505-03:40:05.830|150=0|151=1|207=HNXDS|10=210|
+[2026-05-05 10:40:05] [INFO] [NEW] Order fbfc58c5 accepted at 2026-05-05T03:40:05.830000+00:00
+[2026-05-05 10:40:05] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 10:40:05] [DEBUG] No handlers registered for event 'fix:order:accepted'
+[2026-05-05 10:40:05] [INFO] [FROM APP] 8=FIX.4.4|9=305|35=8|34=61|49=SERVER|52=20260505-03:40:06.142|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=2010.3|11=fbfc58c5|14=1|17=3fc14942-1b4c-4c70-aa7e-7f59e3f808d2|31=2010.3|32=1|37=8324ea20-3c6f-4a96-b06e-c521eecf6bf3|38=1|39=2|40=2|44=2010.3|54=1|55=VN30F2605|59=1|60=20260505-03:40:05.000|150=F|151=0|207=HNXDS|10=224|
+[2026-05-05 10:40:05] [INFO] [TRADE] fbfc58c5: Traded 1.0 @ 2010.3 at 2026-05-05T03:40:05+00:00 (OrdStatus=2)
+[2026-05-05 10:40:05] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 10:40:05] [DEBUG] No handlers registered for event 'fix:order:filled'
+[2026-05-05 10:40:35] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=60|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:40:35.000|56=SERVER|1=main|553=Group13|10=061|
+[2026-05-05 10:40:36] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=62|49=SERVER|52=20260505-03:40:36.326|56=f2c11b00bf3d41fca072225f328ce98e|10=195|
+[2026-05-05 10:41:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:41:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:41:02] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 10:41:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:41:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:41:02] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=220060000.0
+[2026-05-05 10:41:05] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=61|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:41:05.000|56=SERVER|1=main|553=Group13|10=060|
+[2026-05-05 10:41:06] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=63|49=SERVER|52=20260505-03:41:06.326|56=f2c11b00bf3d41fca072225f328ce98e|10=194|
+[2026-05-05 10:41:35] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=62|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:41:35.000|56=SERVER|1=main|553=Group13|10=064|
+[2026-05-05 10:41:36] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=64|49=SERVER|52=20260505-03:41:36.325|56=f2c11b00bf3d41fca072225f328ce98e|10=197|
+[2026-05-05 10:42:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:42:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:42:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 10:42:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:42:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:42:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=220060000.0
+[2026-05-05 10:42:05] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=63|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:42:05.000|56=SERVER|1=main|553=Group13|10=063|
+[2026-05-05 10:42:06] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=65|49=SERVER|52=20260505-03:42:06.325|56=f2c11b00bf3d41fca072225f328ce98e|10=196|
+[2026-05-05 10:42:35] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=64|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:42:35.000|56=SERVER|1=main|553=Group13|10=067|
+[2026-05-05 10:42:36] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=66|49=SERVER|52=20260505-03:42:36.325|56=f2c11b00bf3d41fca072225f328ce98e|10=200|
+[2026-05-05 10:43:05] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=65|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:43:05.000|56=SERVER|1=main|553=Group13|10=066|
+[2026-05-05 10:43:06] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=67|49=SERVER|52=20260505-03:43:06.325|56=f2c11b00bf3d41fca072225f328ce98e|10=199|
+[2026-05-05 10:43:24] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:43:24] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:43:24] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 10:43:24] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:43:24] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:43:24] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=220060000.0
+[2026-05-05 10:43:35] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=66|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:43:35.000|56=SERVER|1=main|553=Group13|10=070|
+[2026-05-05 10:43:36] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=68|49=SERVER|52=20260505-03:43:36.326|56=f2c11b00bf3d41fca072225f328ce98e|10=204|
+[2026-05-05 10:44:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:44:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:44:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 10:44:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:44:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:44:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=220060000.0
+[2026-05-05 10:44:05] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=67|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:44:05.000|56=SERVER|1=main|553=Group13|10=069|
+[2026-05-05 10:44:06] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=69|49=SERVER|52=20260505-03:44:06.326|56=f2c11b00bf3d41fca072225f328ce98e|10=203|
+[2026-05-05 10:44:35] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=68|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:44:35.000|56=SERVER|1=main|553=Group13|10=073|
+[2026-05-05 10:44:36] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=70|49=SERVER|52=20260505-03:44:36.326|56=f2c11b00bf3d41fca072225f328ce98e|10=198|
+[2026-05-05 10:45:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:45:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:45:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 10:45:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:45:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:45:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=220060000.0
+[2026-05-05 10:45:05] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=69|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:45:05.000|56=SERVER|1=main|553=Group13|10=072|
+[2026-05-05 10:45:06] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=71|49=SERVER|52=20260505-03:45:06.326|56=f2c11b00bf3d41fca072225f328ce98e|10=197|
+[2026-05-05 10:45:35] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=70|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:45:35.000|56=SERVER|1=main|553=Group13|10=067|
+[2026-05-05 10:45:36] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=72|49=SERVER|52=20260505-03:45:36.325|56=f2c11b00bf3d41fca072225f328ce98e|10=200|
+[2026-05-05 10:46:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:46:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:46:04] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 10:46:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:46:05] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:46:05] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=220060000.0
+[2026-05-05 10:46:05] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=71|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:46:05.000|56=SERVER|1=main|553=Group13|10=066|
+[2026-05-05 10:46:06] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=73|49=SERVER|52=20260505-03:46:06.325|56=f2c11b00bf3d41fca072225f328ce98e|10=199|
+[2026-05-05 10:46:35] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=72|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:46:35.000|56=SERVER|1=main|553=Group13|10=070|
+[2026-05-05 10:46:36] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=74|49=SERVER|52=20260505-03:46:36.326|56=f2c11b00bf3d41fca072225f328ce98e|10=204|
+[2026-05-05 10:47:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:47:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:47:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 10:47:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:47:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:47:04] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=220060000.0
+[2026-05-05 10:47:05] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=73|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:47:05.000|56=SERVER|1=main|553=Group13|10=069|
+[2026-05-05 10:47:06] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=75|49=SERVER|52=20260505-03:47:06.326|56=f2c11b00bf3d41fca072225f328ce98e|10=203|
+[2026-05-05 10:47:35] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=74|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:47:35.000|56=SERVER|1=main|553=Group13|10=073|
+[2026-05-05 10:47:36] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=76|49=SERVER|52=20260505-03:47:36.326|56=f2c11b00bf3d41fca072225f328ce98e|10=207|
+[2026-05-05 10:48:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:48:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:48:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 10:48:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:48:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:48:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=220060000.0
+[2026-05-05 10:48:05] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=75|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:48:05.000|56=SERVER|1=main|553=Group13|10=072|
+[2026-05-05 10:48:06] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=77|49=SERVER|52=20260505-03:48:06.326|56=f2c11b00bf3d41fca072225f328ce98e|10=206|
+[2026-05-05 10:48:35] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=76|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:48:35.000|56=SERVER|1=main|553=Group13|10=076|
+[2026-05-05 10:48:36] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=78|49=SERVER|52=20260505-03:48:36.326|56=f2c11b00bf3d41fca072225f328ce98e|10=210|
+[2026-05-05 10:49:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:49:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:49:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 10:49:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:49:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:49:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=220060000.0
+[2026-05-05 10:49:05] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=77|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:49:05.000|56=SERVER|1=main|553=Group13|10=075|
+[2026-05-05 10:49:06] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=79|49=SERVER|52=20260505-03:49:06.326|56=f2c11b00bf3d41fca072225f328ce98e|10=209|
+[2026-05-05 10:49:35] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=78|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:49:35.000|56=SERVER|1=main|553=Group13|10=079|
+[2026-05-05 10:49:36] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=80|49=SERVER|52=20260505-03:49:36.326|56=f2c11b00bf3d41fca072225f328ce98e|10=204|
+[2026-05-05 10:50:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:50:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:50:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 10:50:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:50:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:50:04] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=220060000.0
+[2026-05-05 10:50:05] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=79|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:50:05.000|56=SERVER|1=main|553=Group13|10=069|
+[2026-05-05 10:50:06] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=81|49=SERVER|52=20260505-03:50:06.325|56=f2c11b00bf3d41fca072225f328ce98e|10=193|
+[2026-05-05 10:50:35] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=80|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:50:35.000|56=SERVER|1=main|553=Group13|10=064|
+[2026-05-05 10:50:36] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=82|49=SERVER|52=20260505-03:50:36.325|56=f2c11b00bf3d41fca072225f328ce98e|10=197|
+[2026-05-05 10:51:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:51:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:51:02] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 10:51:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:51:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:51:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=220060000.0
+[2026-05-05 10:51:05] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=81|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:51:05.000|56=SERVER|1=main|553=Group13|10=063|
+[2026-05-05 10:51:06] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=83|49=SERVER|52=20260505-03:51:06.326|56=f2c11b00bf3d41fca072225f328ce98e|10=197|
+[2026-05-05 10:51:35] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=82|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:51:35.000|56=SERVER|1=main|553=Group13|10=067|
+[2026-05-05 10:51:41] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=84|49=SERVER|52=20260505-03:51:36.326|56=f2c11b00bf3d41fca072225f328ce98e|10=201|
+[2026-05-05 10:52:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:52:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:52:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 10:52:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:52:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:52:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=220060000.0
+[2026-05-05 10:52:05] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=83|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:52:05.000|56=SERVER|1=main|553=Group13|10=066|
+[2026-05-05 10:52:06] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=85|49=SERVER|52=20260505-03:52:06.326|56=f2c11b00bf3d41fca072225f328ce98e|10=200|
+[2026-05-05 10:52:35] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=84|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:52:35.000|56=SERVER|1=main|553=Group13|10=070|
+[2026-05-05 10:52:36] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=86|49=SERVER|52=20260505-03:52:36.328|56=f2c11b00bf3d41fca072225f328ce98e|10=206|
+[2026-05-05 10:53:05] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=85|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:53:05.000|56=SERVER|1=main|553=Group13|10=069|
+[2026-05-05 10:53:05] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:53:05] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:53:05] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 10:53:05] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:53:05] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:53:06] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=220060000.0
+[2026-05-05 10:53:06] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=87|49=SERVER|52=20260505-03:53:06.326|56=f2c11b00bf3d41fca072225f328ce98e|10=203|
+[2026-05-05 10:53:35] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=86|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:53:35.000|56=SERVER|1=main|553=Group13|10=073|
+[2026-05-05 10:53:36] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=88|49=SERVER|52=20260505-03:53:36.326|56=f2c11b00bf3d41fca072225f328ce98e|10=207|
+[2026-05-05 10:54:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:54:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:54:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 10:54:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:54:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:54:04] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=220060000.0
+[2026-05-05 10:54:05] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=87|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:54:05.000|56=SERVER|1=main|553=Group13|10=072|
+[2026-05-05 10:54:06] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=89|49=SERVER|52=20260505-03:54:06.326|56=f2c11b00bf3d41fca072225f328ce98e|10=206|
+[2026-05-05 10:54:35] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=88|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:54:35.000|56=SERVER|1=main|553=Group13|10=076|
+[2026-05-05 10:54:36] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=90|49=SERVER|52=20260505-03:54:36.326|56=f2c11b00bf3d41fca072225f328ce98e|10=201|
+[2026-05-05 10:55:05] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=89|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:55:05.000|56=SERVER|1=main|553=Group13|10=075|
+[2026-05-05 10:55:05] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:55:05] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:55:05] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 10:55:05] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:55:06] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=91|49=SERVER|52=20260505-03:55:06.325|56=f2c11b00bf3d41fca072225f328ce98e|10=199|
+[2026-05-05 10:55:06] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:55:06] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=220060000.0
+[2026-05-05 10:55:35] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=90|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:55:35.000|56=SERVER|1=main|553=Group13|10=070|
+[2026-05-05 10:55:36] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=92|49=SERVER|52=20260505-03:55:36.325|56=f2c11b00bf3d41fca072225f328ce98e|10=203|
+[2026-05-05 10:56:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:56:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:56:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 10:56:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:56:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:56:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=220060000.0
+[2026-05-05 10:56:05] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=91|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:56:05.000|56=SERVER|1=main|553=Group13|10=069|
+[2026-05-05 10:56:06] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=93|49=SERVER|52=20260505-03:56:06.325|56=f2c11b00bf3d41fca072225f328ce98e|10=202|
+[2026-05-05 10:56:35] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=92|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:56:35.000|56=SERVER|1=main|553=Group13|10=073|
+[2026-05-05 10:56:36] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=94|49=SERVER|52=20260505-03:56:36.326|56=f2c11b00bf3d41fca072225f328ce98e|10=207|
+[2026-05-05 10:57:05] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=93|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:57:05.000|56=SERVER|1=main|553=Group13|10=072|
+[2026-05-05 10:57:05] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:57:06] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:57:06] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 10:57:06] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:57:06] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=95|49=SERVER|52=20260505-03:57:06.326|56=f2c11b00bf3d41fca072225f328ce98e|10=206|
+[2026-05-05 10:57:06] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:57:06] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=220060000.0
+[2026-05-05 10:57:35] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=94|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:57:35.000|56=SERVER|1=main|553=Group13|10=076|
+[2026-05-05 10:57:36] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=96|49=SERVER|52=20260505-03:57:36.326|56=f2c11b00bf3d41fca072225f328ce98e|10=210|
+[2026-05-05 10:58:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:58:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:58:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-05-05 10:58:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:58:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:58:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=220060000.0
+[2026-05-05 10:58:03] [DEBUG] [TO APP] 8=FIX.4.4|9=187|35=D|34=95|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:58:03.000|56=SERVER|1=main|11=f2e27e7a|38=1|40=2|44=2013.4|54=1|55=VN30F2605|59=1|60=20260505-03:58:03|207=HNXDS|553=Group13|10=201|
+[2026-05-05 10:58:03] [INFO] [ORDER] Sent new order: f2e27e7a
+[2026-05-05 10:58:03] [DEBUG] No handlers registered for event 'fix:order:submit'
+[2026-05-05 10:58:03] [INFO] [FROM APP] 8=FIX.4.4|9=285|35=8|34=97|49=SERVER|52=20260505-03:58:03.700|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=f2e27e7a|14=0|17=7e137ac7-7af1-4ae0-875b-b02563587d29|37=d80465bf-77c6-4926-8972-438e8bce9588|38=1|39=A|40=2|44=2013.4|54=1|55=VN30F2605|59=1|60=20260505-03:58:03.700|150=A|151=1|207=HNXDS|10=004|
+[2026-05-05 10:58:03] [INFO] [PENDING_NEW] f2e27e7a at 2026-05-05T03:58:03.700000+00:00
+[2026-05-05 10:58:03] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 10:58:03] [DEBUG] No handlers registered for event 'fix:order:pending_new'
+[2026-05-05 10:58:03] [INFO] [FROM APP] 8=FIX.4.4|9=285|35=8|34=98|49=SERVER|52=20260505-03:58:03.734|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=f2e27e7a|14=0|17=f2c18cf9-7e65-47c2-a176-0c0112841c84|37=d80465bf-77c6-4926-8972-438e8bce9588|38=1|39=0|40=2|44=2013.4|54=1|55=VN30F2605|59=1|60=20260505-03:58:03.733|150=0|151=1|207=HNXDS|10=185|
+[2026-05-05 10:58:03] [INFO] [NEW] Order f2e27e7a accepted at 2026-05-05T03:58:03.733000+00:00
+[2026-05-05 10:58:03] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 10:58:03] [DEBUG] No handlers registered for event 'fix:order:accepted'
+[2026-05-05 10:58:04] [INFO] [FROM APP] 8=FIX.4.4|9=305|35=8|34=99|49=SERVER|52=20260505-03:58:04.665|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=2013.3|11=f2e27e7a|14=1|17=0f38cf42-ac0a-4e07-b9d1-6834aaaad149|31=2013.3|32=1|37=d80465bf-77c6-4926-8972-438e8bce9588|38=1|39=2|40=2|44=2013.3|54=1|55=VN30F2605|59=1|60=20260505-03:58:04.000|150=F|151=0|207=HNXDS|10=055|
+[2026-05-05 10:58:04] [INFO] [TRADE] f2e27e7a: Traded 1.0 @ 2013.3 at 2026-05-05T03:58:04+00:00 (OrdStatus=2)
+[2026-05-05 10:58:04] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 10:58:04] [DEBUG] No handlers registered for event 'fix:order:filled'
+[2026-05-05 10:58:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=96|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:58:33.000|56=SERVER|1=main|553=Group13|10=077|
+[2026-05-05 10:58:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=100|49=SERVER|52=20260505-03:58:35.326|56=f2c11b00bf3d41fca072225f328ce98e|10=245|
+[2026-05-05 10:59:03] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=97|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:59:03.000|56=SERVER|1=main|553=Group13|10=076|
+[2026-05-05 10:59:05] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=101|49=SERVER|52=20260505-03:59:05.326|56=f2c11b00bf3d41fca072225f328ce98e|10=244|
+[2026-05-05 10:59:09] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:59:10] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 10:59:10] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 10:59:10] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 10:59:10] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 10:59:10] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=169707500.0
+[2026-05-05 10:59:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=98|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-03:59:33.000|56=SERVER|1=main|553=Group13|10=080|
+[2026-05-05 10:59:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=102|49=SERVER|52=20260505-03:59:35.326|56=f2c11b00bf3d41fca072225f328ce98e|10=248|
+[2026-05-05 11:00:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:00:03] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=99|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:00:03.000|56=SERVER|1=main|553=Group13|10=065|
+[2026-05-05 11:00:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 11:00:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 11:00:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:00:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 11:00:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=169707500.0
+[2026-05-05 11:00:05] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=103|49=SERVER|52=20260505-04:00:05.326|56=f2c11b00bf3d41fca072225f328ce98e|10=233|
+[2026-05-05 11:00:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=100|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:00:33.000|56=SERVER|1=main|553=Group13|10=100|
+[2026-05-05 11:00:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=104|49=SERVER|52=20260505-04:00:35.326|56=f2c11b00bf3d41fca072225f328ce98e|10=237|
+[2026-05-05 11:01:03] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=101|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:01:03.000|56=SERVER|1=main|553=Group13|10=099|
+[2026-05-05 11:01:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:01:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 11:01:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 11:01:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:01:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 11:01:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=169707500.0
+[2026-05-05 11:01:05] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=105|49=SERVER|52=20260505-04:01:05.325|56=f2c11b00bf3d41fca072225f328ce98e|10=235|
+[2026-05-05 11:01:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=102|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:01:33.000|56=SERVER|1=main|553=Group13|10=103|
+[2026-05-05 11:01:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=106|49=SERVER|52=20260505-04:01:35.326|56=f2c11b00bf3d41fca072225f328ce98e|10=240|
+[2026-05-05 11:02:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:02:03] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=103|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:02:03.000|56=SERVER|1=main|553=Group13|10=102|
+[2026-05-05 11:02:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 11:02:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 11:02:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:02:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 11:02:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=169707500.0
+[2026-05-05 11:02:05] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=107|49=SERVER|52=20260505-04:02:05.326|56=f2c11b00bf3d41fca072225f328ce98e|10=239|
+[2026-05-05 11:02:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=104|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:02:33.000|56=SERVER|1=main|553=Group13|10=106|
+[2026-05-05 11:02:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=108|49=SERVER|52=20260505-04:02:35.326|56=f2c11b00bf3d41fca072225f328ce98e|10=243|
+[2026-05-05 11:03:03] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=105|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:03:03.000|56=SERVER|1=main|553=Group13|10=105|
+[2026-05-05 11:03:05] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=109|49=SERVER|52=20260505-04:03:05.326|56=f2c11b00bf3d41fca072225f328ce98e|10=242|
+[2026-05-05 11:03:08] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:03:09] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 11:03:09] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 11:03:09] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:03:09] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 11:03:09] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=169707500.0
+[2026-05-05 11:03:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=106|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:03:33.000|56=SERVER|1=main|553=Group13|10=109|
+[2026-05-05 11:03:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=110|49=SERVER|52=20260505-04:03:35.326|56=f2c11b00bf3d41fca072225f328ce98e|10=237|
+[2026-05-05 11:04:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:04:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 11:04:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 11:04:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:04:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 11:04:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=169707500.0
+[2026-05-05 11:04:03] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=107|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:04:03.000|56=SERVER|1=main|553=Group13|10=108|
+[2026-05-05 11:04:05] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=111|49=SERVER|52=20260505-04:04:05.326|56=f2c11b00bf3d41fca072225f328ce98e|10=236|
+[2026-05-05 11:04:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=108|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:04:33.000|56=SERVER|1=main|553=Group13|10=112|
+[2026-05-05 11:04:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=112|49=SERVER|52=20260505-04:04:35.326|56=f2c11b00bf3d41fca072225f328ce98e|10=240|
+[2026-05-05 11:05:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:05:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 11:05:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 11:05:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:05:03] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=109|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:05:03.000|56=SERVER|1=main|553=Group13|10=111|
+[2026-05-05 11:05:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 11:05:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=169707500.0
+[2026-05-05 11:05:05] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=113|49=SERVER|52=20260505-04:05:05.326|56=f2c11b00bf3d41fca072225f328ce98e|10=239|
+[2026-05-05 11:05:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=110|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:05:33.000|56=SERVER|1=main|553=Group13|10=106|
+[2026-05-05 11:05:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=114|49=SERVER|52=20260505-04:05:35.326|56=f2c11b00bf3d41fca072225f328ce98e|10=243|
+[2026-05-05 11:06:03] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=111|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:06:03.000|56=SERVER|1=main|553=Group13|10=105|
+[2026-05-05 11:06:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:06:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 11:06:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 11:06:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:06:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 11:06:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=169707500.0
+[2026-05-05 11:06:05] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=115|49=SERVER|52=20260505-04:06:05.326|56=f2c11b00bf3d41fca072225f328ce98e|10=242|
+[2026-05-05 11:06:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=112|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:06:33.000|56=SERVER|1=main|553=Group13|10=109|
+[2026-05-05 11:06:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=116|49=SERVER|52=20260505-04:06:35.326|56=f2c11b00bf3d41fca072225f328ce98e|10=246|
+[2026-05-05 11:07:03] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=113|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:07:03.000|56=SERVER|1=main|553=Group13|10=108|
+[2026-05-05 11:07:05] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=117|49=SERVER|52=20260505-04:07:05.326|56=f2c11b00bf3d41fca072225f328ce98e|10=245|
+[2026-05-05 11:07:09] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:07:09] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 11:07:09] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 11:07:09] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:07:09] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 11:07:09] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=169707500.0
+[2026-05-05 11:07:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=114|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:07:33.000|56=SERVER|1=main|553=Group13|10=112|
+[2026-05-05 11:07:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=118|49=SERVER|52=20260505-04:07:35.325|56=f2c11b00bf3d41fca072225f328ce98e|10=248|
+[2026-05-05 11:08:03] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=115|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:08:03.000|56=SERVER|1=main|553=Group13|10=111|
+[2026-05-05 11:08:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:08:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 11:08:04] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 11:08:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:08:05] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=119|49=SERVER|52=20260505-04:08:05.326|56=f2c11b00bf3d41fca072225f328ce98e|10=248|
+[2026-05-05 11:08:05] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 11:08:05] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=169707500.0
+[2026-05-05 11:08:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=116|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:08:33.000|56=SERVER|1=main|553=Group13|10=115|
+[2026-05-05 11:08:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=120|49=SERVER|52=20260505-04:08:35.326|56=f2c11b00bf3d41fca072225f328ce98e|10=243|
+[2026-05-05 11:09:03] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=117|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:09:03.000|56=SERVER|1=main|553=Group13|10=114|
+[2026-05-05 11:09:05] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:09:05] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=121|49=SERVER|52=20260505-04:09:05.326|56=f2c11b00bf3d41fca072225f328ce98e|10=242|
+[2026-05-05 11:09:05] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 11:09:05] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 11:09:05] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:09:05] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 11:09:05] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=169707500.0
+[2026-05-05 11:09:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=118|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:09:33.000|56=SERVER|1=main|553=Group13|10=118|
+[2026-05-05 11:09:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=122|49=SERVER|52=20260505-04:09:35.326|56=f2c11b00bf3d41fca072225f328ce98e|10=246|
+[2026-05-05 11:10:03] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=119|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:10:03.000|56=SERVER|1=main|553=Group13|10=108|
+[2026-05-05 11:10:05] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=123|49=SERVER|52=20260505-04:10:05.325|56=f2c11b00bf3d41fca072225f328ce98e|10=235|
+[2026-05-05 11:10:07] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:10:07] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 11:10:07] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 11:10:07] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:10:07] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 11:10:07] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=169707500.0
+[2026-05-05 11:10:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=120|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:10:33.000|56=SERVER|1=main|553=Group13|10=103|
+[2026-05-05 11:10:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=124|49=SERVER|52=20260505-04:10:35.326|56=f2c11b00bf3d41fca072225f328ce98e|10=240|
+[2026-05-05 11:11:03] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=121|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:11:03.000|56=SERVER|1=main|553=Group13|10=102|
+[2026-05-05 11:11:05] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=125|49=SERVER|52=20260505-04:11:05.326|56=f2c11b00bf3d41fca072225f328ce98e|10=239|
+[2026-05-05 11:11:07] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:11:07] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 11:11:07] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 11:11:07] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:11:07] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 11:11:07] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=169707500.0
+[2026-05-05 11:11:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=122|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:11:33.000|56=SERVER|1=main|553=Group13|10=106|
+[2026-05-05 11:11:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=126|49=SERVER|52=20260505-04:11:35.329|56=f2c11b00bf3d41fca072225f328ce98e|10=246|
+[2026-05-05 11:12:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:12:03] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=123|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:12:03.000|56=SERVER|1=main|553=Group13|10=105|
+[2026-05-05 11:12:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 11:12:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 11:12:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:12:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 11:12:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=169707500.0
+[2026-05-05 11:12:05] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=127|49=SERVER|52=20260505-04:12:05.326|56=f2c11b00bf3d41fca072225f328ce98e|10=242|
+[2026-05-05 11:12:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=124|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:12:33.000|56=SERVER|1=main|553=Group13|10=109|
+[2026-05-05 11:12:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=128|49=SERVER|52=20260505-04:12:35.326|56=f2c11b00bf3d41fca072225f328ce98e|10=246|
+[2026-05-05 11:13:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:13:03] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=125|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:13:03.000|56=SERVER|1=main|553=Group13|10=108|
+[2026-05-05 11:13:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 11:13:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 11:13:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:13:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 11:13:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=169707500.0
+[2026-05-05 11:13:05] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=129|49=SERVER|52=20260505-04:13:05.326|56=f2c11b00bf3d41fca072225f328ce98e|10=245|
+[2026-05-05 11:13:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=126|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:13:33.000|56=SERVER|1=main|553=Group13|10=112|
+[2026-05-05 11:13:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=130|49=SERVER|52=20260505-04:13:35.326|56=f2c11b00bf3d41fca072225f328ce98e|10=240|
+[2026-05-05 11:14:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:14:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 11:14:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 11:14:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:14:03] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=127|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:14:03.000|56=SERVER|1=main|553=Group13|10=111|
+[2026-05-05 11:14:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 11:14:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=169707500.0
+[2026-05-05 11:14:05] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=131|49=SERVER|52=20260505-04:14:05.326|56=f2c11b00bf3d41fca072225f328ce98e|10=239|
+[2026-05-05 11:14:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=128|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:14:33.000|56=SERVER|1=main|553=Group13|10=115|
+[2026-05-05 11:14:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=132|49=SERVER|52=20260505-04:14:35.326|56=f2c11b00bf3d41fca072225f328ce98e|10=243|
+[2026-05-05 11:15:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:15:03] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=129|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:15:03.000|56=SERVER|1=main|553=Group13|10=114|
+[2026-05-05 11:15:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 11:15:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 11:15:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:15:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 11:15:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=169707500.0
+[2026-05-05 11:15:05] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=133|49=SERVER|52=20260505-04:15:05.325|56=f2c11b00bf3d41fca072225f328ce98e|10=241|
+[2026-05-05 11:15:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=130|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:15:33.000|56=SERVER|1=main|553=Group13|10=109|
+[2026-05-05 11:15:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=134|49=SERVER|52=20260505-04:15:35.326|56=f2c11b00bf3d41fca072225f328ce98e|10=246|
+[2026-05-05 11:16:03] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=131|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:16:03.000|56=SERVER|1=main|553=Group13|10=108|
+[2026-05-05 11:16:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:16:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 11:16:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 11:16:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:16:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 11:16:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=169707500.0
+[2026-05-05 11:16:05] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=135|49=SERVER|52=20260505-04:16:05.326|56=f2c11b00bf3d41fca072225f328ce98e|10=245|
+[2026-05-05 11:16:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=132|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:16:33.000|56=SERVER|1=main|553=Group13|10=112|
+[2026-05-05 11:16:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=136|49=SERVER|52=20260505-04:16:35.325|56=f2c11b00bf3d41fca072225f328ce98e|10=248|
+[2026-05-05 11:17:03] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=133|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:17:03.000|56=SERVER|1=main|553=Group13|10=111|
+[2026-05-05 11:17:05] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=137|49=SERVER|52=20260505-04:17:05.325|56=f2c11b00bf3d41fca072225f328ce98e|10=247|
+[2026-05-05 11:17:06] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:17:06] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 11:17:06] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 11:17:06] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:17:06] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 11:17:06] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=169707500.0
+[2026-05-05 11:17:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=134|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:17:33.000|56=SERVER|1=main|553=Group13|10=115|
+[2026-05-05 11:17:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=138|49=SERVER|52=20260505-04:17:35.326|56=f2c11b00bf3d41fca072225f328ce98e|10=252|
+[2026-05-05 11:18:03] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=135|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:18:03.000|56=SERVER|1=main|553=Group13|10=114|
+[2026-05-05 11:18:05] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=139|49=SERVER|52=20260505-04:18:05.326|56=f2c11b00bf3d41fca072225f328ce98e|10=251|
+[2026-05-05 11:18:09] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:18:10] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 11:18:10] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 11:18:10] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:18:10] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 11:18:10] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=169707500.0
+[2026-05-05 11:18:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=136|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:18:33.000|56=SERVER|1=main|553=Group13|10=118|
+[2026-05-05 11:18:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=140|49=SERVER|52=20260505-04:18:35.326|56=f2c11b00bf3d41fca072225f328ce98e|10=246|
+[2026-05-05 11:19:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:19:03] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=137|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:19:03.000|56=SERVER|1=main|553=Group13|10=117|
+[2026-05-05 11:19:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 11:19:03] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 11:19:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:19:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 11:19:04] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=169707500.0
+[2026-05-05 11:19:05] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=141|49=SERVER|52=20260505-04:19:05.326|56=f2c11b00bf3d41fca072225f328ce98e|10=245|
+[2026-05-05 11:19:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=138|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:19:33.000|56=SERVER|1=main|553=Group13|10=121|
+[2026-05-05 11:19:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=142|49=SERVER|52=20260505-04:19:35.326|56=f2c11b00bf3d41fca072225f328ce98e|10=249|
+[2026-05-05 11:20:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:20:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-05-05 11:20:02] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-05-05 11:20:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-05-05 11:20:03] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=139|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:20:03.000|56=SERVER|1=main|553=Group13|10=111|
+[2026-05-05 11:20:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-05-05 11:20:03] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=169707500.0
+[2026-05-05 11:20:05] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=143|49=SERVER|52=20260505-04:20:05.326|56=f2c11b00bf3d41fca072225f328ce98e|10=239|
+[2026-05-05 11:20:33] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=102|35=0|34=140|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:20:33.000|56=SERVER|1=main|553=Group13|10=106|
+[2026-05-05 11:20:35] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=83|35=0|34=144|49=SERVER|52=20260505-04:20:35.326|56=f2c11b00bf3d41fca072225f328ce98e|10=243|
+[2026-05-05 11:21:36] [INFO] Session created: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-05-05 11:21:36] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_8w12ezj5.cfg username=Group13
+[2026-05-05 11:21:36] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-05-05 11:21:36] [DEBUG] Registered handler for event 'fix:order:filled'. Total handlers: 1
+[2026-05-05 11:21:36] [DEBUG] Registered handler for event 'fix:execution_report'. Total handlers: 2
+[2026-05-05 11:21:36] [INFO] Starting FIX session...
+[2026-05-05 11:21:36] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-05-05 11:21:36] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=135|35=A|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:21:36.000|56=SERVER|1=main|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=116|
+[2026-05-05 11:21:37] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-05-05 11:21:37] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260505-04:21:37.260|56=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|10=233|
+[2026-05-05 11:21:37] [INFO] event=fix_id_resolved username=Group13 fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b
+[2026-05-05 11:21:37] [INFO] Logon success: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-05-05 11:21:37] [INFO] Order manager session set: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-05-05 11:21:37] [DEBUG] No handlers registered for event 'fix:logon'
+[2026-05-05 11:21:38] [DEBUG] [TO APP] 8=FIX.4.4|9=186|35=D|34=2|49=f2c11b00bf3d41fca072225f328ce98e|52=20260505-04:21:38.000|56=SERVER|1=main|11=8eb6e125|38=1|40=2|44=2012.9|54=2|55=VN30F2605|59=1|60=20260505-04:21:38|207=HNXDS|553=Group13|10=094|
+[2026-05-05 11:21:38] [INFO] [ORDER] Sent new order: 8eb6e125
+[2026-05-05 11:21:38] [DEBUG] No handlers registered for event 'fix:order:submit'
+[2026-05-05 11:21:38] [INFO] [FROM APP] 8=FIX.4.4|9=284|35=8|34=2|49=SERVER|52=20260505-04:21:39.093|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=8eb6e125|14=0|17=a88dd25c-8952-40e2-a1c9-3ebbbc5c51d5|37=6790ed50-6af0-48ef-b122-a374dc0b5186|38=1|39=A|40=2|44=2012.9|54=2|55=VN30F2605|59=1|60=20260505-04:21:39.092|150=A|151=1|207=HNXDS|10=182|
+[2026-05-05 11:21:38] [INFO] [PENDING_NEW] 8eb6e125 at 2026-05-05T04:21:39.092000+00:00
+[2026-05-05 11:21:38] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 11:21:38] [DEBUG] No handlers registered for event 'fix:order:pending_new'
+[2026-05-05 11:21:38] [INFO] [FROM APP] 8=FIX.4.4|9=284|35=8|34=3|49=SERVER|52=20260505-04:21:39.126|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=8eb6e125|14=0|17=e84c21d7-9413-4852-a754-bc97def0a9af|37=6790ed50-6af0-48ef-b122-a374dc0b5186|38=1|39=0|40=2|44=2012.9|54=2|55=VN30F2605|59=1|60=20260505-04:21:39.125|150=0|151=1|207=HNXDS|10=063|
+[2026-05-05 11:21:38] [INFO] [NEW] Order 8eb6e125 accepted at 2026-05-05T04:21:39.125000+00:00
+[2026-05-05 11:21:38] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 11:21:38] [DEBUG] No handlers registered for event 'fix:order:accepted'
+[2026-05-05 11:21:39] [INFO] [FROM APP] 8=FIX.4.4|9=304|35=8|34=4|49=SERVER|52=20260505-04:21:39.208|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=2013.2|11=8eb6e125|14=1|17=b24f4be0-fed0-41f1-a5ac-51b603bb380e|31=2013.2|32=1|37=6790ed50-6af0-48ef-b122-a374dc0b5186|38=1|39=2|40=2|44=2013.2|54=2|55=VN30F2605|59=1|60=20260505-11:21:39.137|150=F|151=0|207=HNXDS|10=070|
+[2026-05-05 11:21:39] [INFO] [TRADE] 8eb6e125: Traded 1.0 @ 2013.2 at 2026-05-05T11:21:39.137000+00:00 (OrdStatus=2)
+[2026-05-05 11:21:39] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-05-05 11:21:39] [DEBUG] Emitting event 'fix:order:filled' to 1 handler(s)

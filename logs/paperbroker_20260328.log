@@ -1,0 +1,316 @@
+[2026-03-28 17:01:42] [INFO] Session created: FIX.4.4:CLIENT->SERVER
+[2026-03-28 17:01:42] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_jh30__wu.cfg username=Group13
+[2026-03-28 17:01:42] [DEBUG] RestSession initialized with base_url: http://localhost:8000
+[2026-03-28 17:04:31] [INFO] Session created: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:04:31] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_av0_23ik.cfg username=Group13
+[2026-03-28 17:04:31] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-03-28 17:04:31] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-03-28 17:04:31] [INFO] Starting FIX session...
+[2026-03-28 17:04:31] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-03-28 17:04:31] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=163|35=A|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260328-10:04:31.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=172|
+[2026-03-28 17:04:32] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260328-10:04:32.448|56=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|10=237|
+[2026-03-28 17:04:32] [INFO] Logon success: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:04:32] [INFO] Order manager session set: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:04:32] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-03-28 17:04:32] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-03-28 17:04:32] [INFO] event=fix_id_resolved username=Group13 fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b
+[2026-03-28 17:04:32] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-03-28 17:04:32] [ERROR] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash HTTP error
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/plutus_x86/lib/python3.10/site-packages/paperbroker/rest/rest_session.py", line 98, in post
+    response.raise_for_status()
+  File "/opt/anaconda3/envs/plutus_x86/lib/python3.10/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error:  for url: https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash status_code=404 response_text={"error":"Mapping not found for given fixAccountID and subAccountID."}
+[2026-03-28 17:04:32] [ERROR] event=remain_cash_fetch_failed fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=f2c11b00bf3d41fca072225f328ce98e error=404 Client Error:  for url: https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash
+[2026-03-28 17:07:37] [INFO] Session created: FIX.4.4:f72030f52dc94e38b4c32ee0d7f9a03b->SERVER
+[2026-03-28 17:07:37] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_7re1c0ki.cfg username=Group13
+[2026-03-28 17:07:37] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-03-28 17:07:37] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-03-28 17:07:37] [INFO] Starting FIX session...
+[2026-03-28 17:07:37] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-03-28 17:07:37] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=163|35=A|34=1|49=f72030f52dc94e38b4c32ee0d7f9a03b|52=20260328-10:07:37.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=192|
+[2026-03-28 17:07:38] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-03-28 17:07:38] [INFO] event=fix_id_resolved username=Group13 fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b
+[2026-03-28 17:07:38] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260328-10:07:38.556|56=f72030f52dc94e38b4c32ee0d7f9a03b|98=0|108=30|141=Y|10=001|
+[2026-03-28 17:07:38] [INFO] Logon success: FIX.4.4:f72030f52dc94e38b4c32ee0d7f9a03b->SERVER
+[2026-03-28 17:07:38] [INFO] Order manager session set: FIX.4.4:f72030f52dc94e38b4c32ee0d7f9a03b->SERVER
+[2026-03-28 17:07:38] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-03-28 17:07:38] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-03-28 17:07:38] [ERROR] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash HTTP error
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/plutus_x86/lib/python3.10/site-packages/paperbroker/rest/rest_session.py", line 98, in post
+    response.raise_for_status()
+  File "/opt/anaconda3/envs/plutus_x86/lib/python3.10/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error:  for url: https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash status_code=404 response_text={"error":"Mapping not found for given fixAccountID and subAccountID."}
+[2026-03-28 17:07:38] [ERROR] event=remain_cash_fetch_failed fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=f2c11b00bf3d41fca072225f328ce98e error=404 Client Error:  for url: https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash
+[2026-03-28 17:07:38] [INFO] Stopping FIX session...
+[2026-03-28 17:07:39] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=128|35=5|34=2|49=f72030f52dc94e38b4c32ee0d7f9a03b|52=20260328-10:07:39.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|553=Group13|10=101|
+[2026-03-28 17:07:39] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=5|34=2|49=SERVER|52=20260328-10:07:39.567|56=f72030f52dc94e38b4c32ee0d7f9a03b|10=170|
+[2026-03-28 17:07:39] [INFO] Logged out: FIX.4.4:f72030f52dc94e38b4c32ee0d7f9a03b->SERVER
+[2026-03-28 17:07:39] [DEBUG] No handlers registered for event 'fix:logout'
+[2026-03-28 17:08:59] [INFO] Session created: FIX.4.4:f72030f52dc94e38b4c32ee0d7f9a03b->SERVER
+[2026-03-28 17:08:59] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_hoy_finb.cfg username=Group13
+[2026-03-28 17:08:59] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-03-28 17:08:59] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-03-28 17:08:59] [INFO] Starting FIX session...
+[2026-03-28 17:08:59] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-03-28 17:08:59] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=163|35=A|34=1|49=f72030f52dc94e38b4c32ee0d7f9a03b|52=20260328-10:08:59.000|56=SERVER|1=f72030f52dc94e38b4c32ee0d7f9a03b|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=208|
+[2026-03-28 17:08:59] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-03-28 17:08:59] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260328-10:08:59.987|56=f72030f52dc94e38b4c32ee0d7f9a03b|98=0|108=30|141=Y|10=013|
+[2026-03-28 17:08:59] [INFO] event=fix_id_resolved username=Group13 fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b
+[2026-03-28 17:09:00] [INFO] Logon success: FIX.4.4:f72030f52dc94e38b4c32ee0d7f9a03b->SERVER
+[2026-03-28 17:09:00] [INFO] Order manager session set: FIX.4.4:f72030f52dc94e38b4c32ee0d7f9a03b->SERVER
+[2026-03-28 17:09:00] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-03-28 17:09:00] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-03-28 17:09:00] [ERROR] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash HTTP error
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/plutus_x86/lib/python3.10/site-packages/paperbroker/rest/rest_session.py", line 98, in post
+    response.raise_for_status()
+  File "/opt/anaconda3/envs/plutus_x86/lib/python3.10/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error:  for url: https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash status_code=404 response_text={"error":"Mapping not found for given fixAccountID and subAccountID."}
+[2026-03-28 17:09:00] [ERROR] event=remain_cash_fetch_failed fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=f72030f52dc94e38b4c32ee0d7f9a03b error=404 Client Error:  for url: https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash
+[2026-03-28 17:09:00] [INFO] Stopping FIX session...
+[2026-03-28 17:09:00] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=128|35=5|34=2|49=f72030f52dc94e38b4c32ee0d7f9a03b|52=20260328-10:09:00.000|56=SERVER|1=f72030f52dc94e38b4c32ee0d7f9a03b|553=Group13|10=102|
+[2026-03-28 17:09:01] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=5|34=2|49=SERVER|52=20260328-10:09:01.030|56=f72030f52dc94e38b4c32ee0d7f9a03b|10=146|
+[2026-03-28 17:09:01] [INFO] Logged out: FIX.4.4:f72030f52dc94e38b4c32ee0d7f9a03b->SERVER
+[2026-03-28 17:09:01] [DEBUG] No handlers registered for event 'fix:logout'
+[2026-03-28 17:11:44] [INFO] Session created: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:11:44] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_yjfal7hs.cfg username=Group13
+[2026-03-28 17:11:44] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-03-28 17:11:44] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-03-28 17:11:44] [INFO] Starting FIX session...
+[2026-03-28 17:11:44] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-03-28 17:11:44] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=163|35=A|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260328-10:11:44.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=174|
+[2026-03-28 17:11:45] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-03-28 17:11:45] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260328-10:11:45.349|56=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|10=239|
+[2026-03-28 17:11:45] [INFO] event=fix_id_resolved username=Group13 fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b
+[2026-03-28 17:11:45] [INFO] Logon success: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:11:45] [INFO] Order manager session set: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:11:45] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-03-28 17:11:45] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-03-28 17:11:45] [ERROR] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash HTTP error
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/plutus_x86/lib/python3.10/site-packages/paperbroker/rest/rest_session.py", line 98, in post
+    response.raise_for_status()
+  File "/opt/anaconda3/envs/plutus_x86/lib/python3.10/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error:  for url: https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash status_code=404 response_text={"error":"Mapping not found for given fixAccountID and subAccountID."}
+[2026-03-28 17:11:45] [ERROR] event=remain_cash_fetch_failed fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=f2c11b00bf3d41fca072225f328ce98e error=404 Client Error:  for url: https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash
+[2026-03-28 17:11:45] [INFO] Stopping FIX session...
+[2026-03-28 17:11:46] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=128|35=5|34=2|49=f2c11b00bf3d41fca072225f328ce98e|52=20260328-10:11:46.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|553=Group13|10=083|
+[2026-03-28 17:11:46] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=5|34=2|49=SERVER|52=20260328-10:11:46.405|56=f2c11b00bf3d41fca072225f328ce98e|10=143|
+[2026-03-28 17:11:46] [INFO] Logged out: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:11:46] [DEBUG] No handlers registered for event 'fix:logout'
+[2026-03-28 17:17:00] [INFO] Session created: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:17:00] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_m3z6aikn.cfg username=Group13
+[2026-03-28 17:17:00] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-03-28 17:17:00] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-03-28 17:17:00] [INFO] Starting FIX session...
+[2026-03-28 17:17:00] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-03-28 17:17:00] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=163|35=A|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260328-10:17:00.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=172|
+[2026-03-28 17:17:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-03-28 17:17:01] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260328-10:17:01.261|56=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|10=230|
+[2026-03-28 17:17:01] [INFO] event=fix_id_resolved username=Group13 fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b
+[2026-03-28 17:17:01] [INFO] Logon success: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:17:01] [INFO] Order manager session set: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:17:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-03-28 17:17:01] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-03-28 17:17:01] [ERROR] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash HTTP error
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/plutus_x86/lib/python3.10/site-packages/paperbroker/rest/rest_session.py", line 98, in post
+    response.raise_for_status()
+  File "/opt/anaconda3/envs/plutus_x86/lib/python3.10/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error:  for url: https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash status_code=404 response_text={"error":"Mapping not found for given fixAccountID and subAccountID."}
+[2026-03-28 17:17:01] [ERROR] event=remain_cash_fetch_failed fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=f2c11b00bf3d41fca072225f328ce98e error=404 Client Error:  for url: https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash
+[2026-03-28 17:17:01] [INFO] Stopping FIX session...
+[2026-03-28 17:17:02] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=128|35=5|34=2|49=f2c11b00bf3d41fca072225f328ce98e|52=20260328-10:17:02.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|553=Group13|10=081|
+[2026-03-28 17:17:02] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=5|34=2|49=SERVER|52=20260328-10:17:02.309|56=f2c11b00bf3d41fca072225f328ce98e|10=144|
+[2026-03-28 17:17:02] [INFO] Logged out: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:17:02] [DEBUG] No handlers registered for event 'fix:logout'
+[2026-03-28 17:18:49] [INFO] Session created: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:18:49] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_7oxsr8ay.cfg username=Group13
+[2026-03-28 17:18:49] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-03-28 17:18:49] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-03-28 17:18:49] [INFO] Starting FIX session...
+[2026-03-28 17:18:49] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-03-28 17:18:49] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=163|35=A|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260328-10:18:49.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=186|
+[2026-03-28 17:18:50] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-03-28 17:18:50] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260328-10:18:50.735|56=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|10=241|
+[2026-03-28 17:18:50] [INFO] event=fix_id_resolved username=Group13 fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b
+[2026-03-28 17:18:50] [INFO] Logon success: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:18:50] [INFO] Order manager session set: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:18:50] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-03-28 17:18:50] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-03-28 17:18:50] [ERROR] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash HTTP error
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/plutus_x86/lib/python3.10/site-packages/paperbroker/rest/rest_session.py", line 98, in post
+    response.raise_for_status()
+  File "/opt/anaconda3/envs/plutus_x86/lib/python3.10/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error:  for url: https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash status_code=404 response_text={"error":"Mapping not found for given fixAccountID and subAccountID."}
+[2026-03-28 17:18:50] [ERROR] event=remain_cash_fetch_failed fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=f2c11b00bf3d41fca072225f328ce98e error=404 Client Error:  for url: https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash
+[2026-03-28 17:22:35] [INFO] Session created: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:22:35] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_7etw9lp4.cfg username=Group13
+[2026-03-28 17:22:35] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-03-28 17:22:35] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-03-28 17:22:35] [DEBUG] Registered handler for event 'fix:logout'. Total handlers: 2
+[2026-03-28 17:22:35] [DEBUG] Registered handler for event 'fix:error'. Total handlers: 3
+[2026-03-28 17:22:35] [INFO] Starting FIX session...
+[2026-03-28 17:22:35] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-03-28 17:22:35] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=163|35=A|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260328-10:22:35.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=176|
+[2026-03-28 17:22:36] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-03-28 17:22:36] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260328-10:22:36.011|56=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|10=227|
+[2026-03-28 17:22:36] [INFO] event=fix_id_resolved username=Group13 fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b
+[2026-03-28 17:22:36] [INFO] Logon success: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:22:36] [INFO] Order manager session set: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:22:36] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-03-28 17:22:38] [INFO] Stopping FIX session...
+[2026-03-28 17:22:38] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=128|35=5|34=2|49=f2c11b00bf3d41fca072225f328ce98e|52=20260328-10:22:38.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|553=Group13|10=086|
+[2026-03-28 17:22:38] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=5|34=2|49=SERVER|52=20260328-10:22:38.996|56=f2c11b00bf3d41fca072225f328ce98e|10=161|
+[2026-03-28 17:22:38] [INFO] Logged out: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:22:38] [DEBUG] Emitting event 'fix:logout' to 1 handler(s)
+[2026-03-28 17:31:36] [INFO] Session created: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:31:36] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_4ay8fgtf.cfg username=Group13
+[2026-03-28 17:31:36] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-03-28 17:31:36] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-03-28 17:31:36] [DEBUG] Registered handler for event 'fix:logout'. Total handlers: 2
+[2026-03-28 17:31:36] [DEBUG] Registered handler for event 'fix:error'. Total handlers: 3
+[2026-03-28 17:31:36] [INFO] Starting FIX session...
+[2026-03-28 17:31:36] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-03-28 17:31:36] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=163|35=A|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260328-10:31:36.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=177|
+[2026-03-28 17:31:37] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-03-28 17:31:37] [INFO] event=fix_id_resolved username=Group13 fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b
+[2026-03-28 17:31:37] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260328-10:31:37.842|56=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|10=240|
+[2026-03-28 17:31:37] [INFO] Logon success: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:31:37] [INFO] Order manager session set: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:31:37] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-03-28 17:31:39] [INFO] Stopping FIX session...
+[2026-03-28 17:31:40] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=128|35=5|34=2|49=f2c11b00bf3d41fca072225f328ce98e|52=20260328-10:31:40.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|553=Group13|10=079|
+[2026-03-28 17:31:40] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=5|34=2|49=SERVER|52=20260328-10:31:40.804|56=f2c11b00bf3d41fca072225f328ce98e|10=142|
+[2026-03-28 17:31:40] [INFO] Logged out: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:31:40] [DEBUG] Emitting event 'fix:logout' to 1 handler(s)
+[2026-03-28 17:39:57] [INFO] Session created: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:39:57] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_cvj2pmrn.cfg username=Group13
+[2026-03-28 17:39:57] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-03-28 17:39:57] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-03-28 17:39:57] [DEBUG] Registered handler for event 'fix:logout'. Total handlers: 2
+[2026-03-28 17:39:57] [DEBUG] Registered handler for event 'fix:error'. Total handlers: 3
+[2026-03-28 17:39:57] [INFO] Starting FIX session...
+[2026-03-28 17:39:57] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-03-28 17:39:57] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=163|35=A|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260328-10:39:57.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=188|
+[2026-03-28 17:39:58] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-03-28 17:39:58] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260328-10:39:58.005|56=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|10=242|
+[2026-03-28 17:39:58] [INFO] event=fix_id_resolved username=Group13 fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b
+[2026-03-28 17:39:58] [INFO] Logon success: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:39:58] [INFO] Order manager session set: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:39:58] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-03-28 17:40:00] [INFO] Stopping FIX session...
+[2026-03-28 17:40:00] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=128|35=5|34=2|49=f2c11b00bf3d41fca072225f328ce98e|52=20260328-10:40:00.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|553=Group13|10=075|
+[2026-03-28 17:40:01] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=5|34=2|49=SERVER|52=20260328-10:40:01.052|56=f2c11b00bf3d41fca072225f328ce98e|10=134|
+[2026-03-28 17:40:01] [INFO] Logged out: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:40:01] [DEBUG] Emitting event 'fix:logout' to 1 handler(s)
+[2026-03-28 17:41:30] [INFO] Session created: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:41:30] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_40ier0nv.cfg username=Group13
+[2026-03-28 17:41:30] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-03-28 17:41:30] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-03-28 17:41:30] [INFO] Starting FIX session...
+[2026-03-28 17:41:30] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-03-28 17:41:30] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=163|35=A|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260328-10:41:30.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=172|
+[2026-03-28 17:41:30] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-03-28 17:41:30] [INFO] event=fix_id_resolved username=Group13 fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b
+[2026-03-28 17:41:30] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260328-10:41:30.956|56=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|10=240|
+[2026-03-28 17:41:30] [INFO] Logon success: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:41:30] [INFO] Order manager session set: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:41:30] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-03-28 17:41:31] [INFO] Stopping FIX session...
+[2026-03-28 17:41:32] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=128|35=5|34=2|49=f2c11b00bf3d41fca072225f328ce98e|52=20260328-10:41:32.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|553=Group13|10=081|
+[2026-03-28 17:41:32] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=5|34=2|49=SERVER|52=20260328-10:41:32.929|56=f2c11b00bf3d41fca072225f328ce98e|10=152|
+[2026-03-28 17:41:32] [INFO] Logged out: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:41:32] [DEBUG] No handlers registered for event 'fix:logout'
+[2026-03-28 17:49:51] [INFO] Session created: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:49:51] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_i7xslpkw.cfg username=Group13
+[2026-03-28 17:49:51] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-03-28 17:49:51] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-03-28 17:49:51] [INFO] Starting FIX session...
+[2026-03-28 17:49:51] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-03-28 17:49:51] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=163|35=A|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260328-10:49:51.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=183|
+[2026-03-28 17:49:52] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-03-28 17:49:52] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260328-10:49:52.764|56=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|10=249|
+[2026-03-28 17:49:52] [INFO] event=fix_id_resolved username=Group13 fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b
+[2026-03-28 17:49:52] [INFO] Logon success: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:49:52] [INFO] Order manager session set: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:49:52] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-03-28 17:49:53] [INFO] Stopping FIX session...
+[2026-03-28 17:49:54] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=128|35=5|34=2|49=f2c11b00bf3d41fca072225f328ce98e|52=20260328-10:49:54.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|553=Group13|10=093|
+[2026-03-28 17:49:54] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=5|34=2|49=SERVER|52=20260328-10:49:54.797|56=f2c11b00bf3d41fca072225f328ce98e|10=167|
+[2026-03-28 17:49:54] [INFO] Logged out: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:49:54] [DEBUG] No handlers registered for event 'fix:logout'
+[2026-03-28 17:52:26] [INFO] Session created: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:52:26] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_fi2e_lky.cfg username=Group13
+[2026-03-28 17:52:26] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-03-28 17:52:26] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-03-28 17:52:26] [INFO] Starting FIX session...
+[2026-03-28 17:52:26] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-03-28 17:52:26] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=146|35=A|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260328-10:52:26.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|553=Group13|10=167|
+[2026-03-28 17:52:26] [INFO] Logged out: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 17:52:26] [DEBUG] No handlers registered for event 'fix:logout'
+[2026-03-28 17:52:27] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-03-28 17:52:27] [INFO] event=fix_id_resolved username=Group13 fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b
+[2026-03-28 18:06:51] [INFO] Session created: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 18:06:51] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_bycqsmhv.cfg username=Group13
+[2026-03-28 18:06:51] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-03-28 18:06:51] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-03-28 18:06:51] [INFO] Starting FIX session...
+[2026-03-28 18:06:51] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-03-28 18:06:51] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=163|35=A|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260328-11:06:51.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=177|
+[2026-03-28 18:06:52] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-03-28 18:06:52] [INFO] event=fix_id_resolved username=Group13 fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b
+[2026-03-28 18:06:52] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260328-11:06:52.537|56=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|10=241|
+[2026-03-28 18:06:52] [INFO] Logon success: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 18:06:52] [INFO] Order manager session set: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 18:06:52] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-03-28 18:06:53] [INFO] Stopping FIX session...
+[2026-03-28 18:06:54] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=128|35=5|34=2|49=f2c11b00bf3d41fca072225f328ce98e|52=20260328-11:06:54.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|553=Group13|10=087|
+[2026-03-28 18:06:54] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=5|34=2|49=SERVER|52=20260328-11:06:54.530|56=f2c11b00bf3d41fca072225f328ce98e|10=146|
+[2026-03-28 18:06:54] [INFO] Logged out: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 18:06:54] [DEBUG] No handlers registered for event 'fix:logout'
+[2026-03-28 18:08:43] [INFO] Session created: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 18:08:43] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_e8wlf7k0.cfg username=Group13
+[2026-03-28 18:08:43] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-03-28 18:08:43] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-03-28 18:08:43] [INFO] Starting FIX session...
+[2026-03-28 18:08:43] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-03-28 18:08:43] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=163|35=A|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260328-11:08:43.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=180|
+[2026-03-28 18:08:43] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-03-28 18:08:43] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260328-11:08:44.015|56=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|10=235|
+[2026-03-28 18:08:43] [INFO] event=fix_id_resolved username=Group13 fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b
+[2026-03-28 18:08:43] [INFO] Logon success: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 18:08:43] [INFO] Order manager session set: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 18:08:43] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-03-28 18:08:44] [INFO] Stopping FIX session...
+[2026-03-28 18:08:45] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=128|35=5|34=2|49=f2c11b00bf3d41fca072225f328ce98e|52=20260328-11:08:45.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|553=Group13|10=089|
+[2026-03-28 18:08:45] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=5|34=2|49=SERVER|52=20260328-11:08:46.000|56=f2c11b00bf3d41fca072225f328ce98e|10=141|
+[2026-03-28 18:08:45] [INFO] Logged out: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 18:08:45] [DEBUG] No handlers registered for event 'fix:logout'
+[2026-03-28 18:10:43] [INFO] Session created: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 18:10:43] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_12e5ju7m.cfg username=Group13
+[2026-03-28 18:10:43] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-03-28 18:10:43] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-03-28 18:10:43] [INFO] Starting FIX session...
+[2026-03-28 18:10:43] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-03-28 18:10:43] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=163|35=A|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260328-11:10:43.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=173|
+[2026-03-28 18:10:43] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-03-28 18:10:43] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260328-11:10:43.974|56=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|10=241|
+[2026-03-28 18:10:43] [INFO] event=fix_id_resolved username=Group13 fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b
+[2026-03-28 18:10:43] [INFO] Logon success: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 18:10:43] [INFO] Order manager session set: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 18:10:43] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-03-28 18:10:44] [INFO] Stopping FIX session...
+[2026-03-28 18:10:45] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=128|35=5|34=2|49=f2c11b00bf3d41fca072225f328ce98e|52=20260328-11:10:45.000|56=SERVER|1=f2c11b00bf3d41fca072225f328ce98e|553=Group13|10=082|
+[2026-03-28 18:10:45] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=5|34=2|49=SERVER|52=20260328-11:10:46.041|56=f2c11b00bf3d41fca072225f328ce98e|10=139|
+[2026-03-28 18:10:45] [INFO] Logged out: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-03-28 18:10:45] [DEBUG] No handlers registered for event 'fix:logout'

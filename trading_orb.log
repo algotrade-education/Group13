@@ -1,0 +1,157 @@
+2026-04-16 08:11:59,579 [INFO] [OrderStore] Initialized SQLite store: orders.db
+2026-04-16 08:12:00,390 [INFO] 🔥 Bot khởi động — Chiến lược: ORB (Opening Range Breakout)
+2026-04-16 08:12:00,847 [INFO] ✅ FIX Kết nối thành công!
+2026-04-16 08:12:02,397 [INFO] ⏳ Timeframe: 1 phút/nến
+2026-04-16 08:12:03,470 [INFO] 💤 Ngủ 57s → thức dậy lúc 08:13:01
+2026-04-16 08:13:02,467 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:14:01
+2026-04-16 08:14:02,252 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:15:01
+2026-04-16 08:15:02,540 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:16:01
+2026-04-16 08:16:02,750 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:17:01
+2026-04-16 08:17:02,081 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:18:01
+2026-04-16 08:18:02,179 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:19:01
+2026-04-16 08:19:02,075 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:20:01
+2026-04-16 08:20:02,060 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:21:01
+2026-04-16 08:21:02,366 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:22:01
+2026-04-16 08:22:02,348 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:23:01
+2026-04-16 08:23:01,941 [INFO] 💤 Ngủ 59s → thức dậy lúc 08:24:01
+2026-04-16 08:24:02,047 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:25:01
+2026-04-16 08:25:02,049 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:26:01
+2026-04-16 08:26:02,029 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:27:01
+2026-04-16 08:27:02,030 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:28:01
+2026-04-16 08:28:01,885 [INFO] 💤 Ngủ 59s → thức dậy lúc 08:29:01
+2026-04-16 08:29:01,945 [INFO] 💤 Ngủ 59s → thức dậy lúc 08:30:01
+2026-04-16 08:30:02,530 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:31:01
+2026-04-16 08:31:01,993 [INFO] 💤 Ngủ 59s → thức dậy lúc 08:32:01
+2026-04-16 08:32:02,166 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:33:01
+2026-04-16 08:33:01,948 [INFO] 💤 Ngủ 59s → thức dậy lúc 08:34:01
+2026-04-16 08:34:01,888 [INFO] 💤 Ngủ 59s → thức dậy lúc 08:35:01
+2026-04-16 08:35:02,086 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:36:01
+2026-04-16 08:36:01,980 [INFO] 💤 Ngủ 59s → thức dậy lúc 08:37:01
+2026-04-16 08:37:02,287 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:38:01
+2026-04-16 08:38:02,053 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:39:01
+2026-04-16 08:39:01,995 [INFO] 💤 Ngủ 59s → thức dậy lúc 08:40:01
+2026-04-16 08:40:02,054 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:41:01
+2026-04-16 08:41:02,060 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:42:01
+2026-04-16 08:42:02,024 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:43:01
+2026-04-16 08:43:02,030 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:44:01
+2026-04-16 08:44:01,992 [INFO] 💤 Ngủ 59s → thức dậy lúc 08:45:01
+2026-04-16 08:45:02,216 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:46:01
+2026-04-16 08:46:01,916 [INFO] 💤 Ngủ 59s → thức dậy lúc 08:47:01
+2026-04-16 08:47:02,152 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:48:01
+2026-04-16 08:48:01,989 [INFO] 💤 Ngủ 59s → thức dậy lúc 08:49:01
+2026-04-16 08:49:01,947 [INFO] 💤 Ngủ 59s → thức dậy lúc 08:50:01
+2026-04-16 08:50:02,073 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:51:01
+2026-04-16 08:51:02,123 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:52:01
+2026-04-16 08:52:02,222 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:53:01
+2026-04-16 08:53:01,903 [INFO] 💤 Ngủ 59s → thức dậy lúc 08:54:01
+2026-04-16 08:54:01,933 [INFO] 💤 Ngủ 59s → thức dậy lúc 08:55:01
+2026-04-16 08:55:02,046 [INFO] 💤 Ngủ 58s → thức dậy lúc 08:56:01
+2026-04-16 08:56:01,929 [INFO] 💤 Ngủ 59s → thức dậy lúc 08:57:01
+2026-04-16 08:57:01,892 [INFO] 💤 Ngủ 59s → thức dậy lúc 08:58:01
+2026-04-16 08:58:01,891 [INFO] 💤 Ngủ 59s → thức dậy lúc 08:59:01
+2026-04-16 08:59:02,030 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:00:01
+2026-04-16 09:00:02,237 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:01:01
+2026-04-16 09:01:02,089 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:02:01
+2026-04-16 09:02:01,929 [INFO] 💤 Ngủ 59s → thức dậy lúc 09:03:01
+2026-04-16 09:03:02,057 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:04:01
+2026-04-16 09:04:01,970 [INFO] 💤 Ngủ 59s → thức dậy lúc 09:05:01
+2026-04-16 09:05:02,213 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:06:01
+2026-04-16 09:06:02,115 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:07:01
+2026-04-16 09:07:02,088 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:08:01
+2026-04-16 09:08:02,236 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:09:01
+2026-04-16 09:09:02,094 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:10:01
+2026-04-16 09:10:02,410 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:11:01
+2026-04-16 09:11:02,068 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:12:01
+2026-04-16 09:12:01,973 [INFO] 💤 Ngủ 59s → thức dậy lúc 09:13:01
+2026-04-16 09:13:01,944 [INFO] 💤 Ngủ 59s → thức dậy lúc 09:14:01
+2026-04-16 09:14:02,301 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:15:01
+2026-04-16 09:15:02,479 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:16:01
+2026-04-16 09:16:02,022 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:17:01
+2026-04-16 09:17:01,998 [INFO] 💤 Ngủ 59s → thức dậy lúc 09:18:01
+2026-04-16 09:18:02,076 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:19:01
+2026-04-16 09:19:02,140 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:20:01
+2026-04-16 09:20:02,314 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:21:01
+2026-04-16 09:21:02,249 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:22:01
+2026-04-16 09:22:02,005 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:23:01
+2026-04-16 09:23:02,050 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:24:01
+2026-04-16 09:24:02,081 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:25:01
+2026-04-16 09:25:02,240 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:26:01
+2026-04-16 09:26:02,365 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:27:01
+2026-04-16 09:27:02,214 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:28:01
+2026-04-16 09:28:02,126 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:29:01
+2026-04-16 09:29:02,016 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:30:01
+2026-04-16 09:30:02,312 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:31:01
+2026-04-16 09:31:02,149 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:32:01
+2026-04-16 09:32:01,968 [INFO] 💤 Ngủ 59s → thức dậy lúc 09:33:01
+2026-04-16 09:33:02,271 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:34:01
+2026-04-16 09:34:02,126 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:35:01
+2026-04-16 09:35:02,192 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:36:01
+2026-04-16 09:36:02,279 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:37:01
+2026-04-16 09:37:01,995 [INFO] 💤 Ngủ 59s → thức dậy lúc 09:38:01
+2026-04-16 09:38:02,343 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:39:01
+2026-04-16 09:39:02,274 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:40:01
+2026-04-16 09:40:02,261 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:41:01
+2026-04-16 09:41:02,190 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:42:01
+2026-04-16 09:42:02,075 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:43:01
+2026-04-16 09:43:02,384 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:44:01
+2026-04-16 09:44:02,165 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:45:01
+2026-04-16 09:45:02,180 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:46:01
+2026-04-16 09:46:02,031 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:47:01
+2026-04-16 09:47:02,076 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:48:01
+2026-04-16 09:48:02,167 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:49:01
+2026-04-16 09:49:01,980 [INFO] 💤 Ngủ 59s → thức dậy lúc 09:50:01
+2026-04-16 09:50:02,174 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:51:01
+2026-04-16 09:51:43,176 [INFO] 💤 Ngủ 17s → thức dậy lúc 09:52:01
+2026-04-16 09:52:00,590 [INFO] ✅ FIX Kết nối thành công!
+2026-04-16 09:52:02,273 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:53:01
+2026-04-16 09:53:02,170 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:54:01
+2026-04-16 09:54:02,021 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:55:01
+2026-04-16 09:55:02,293 [INFO] 📤 SELL 3 @ 1966.4
+2026-04-16 09:55:02,295 [ERROR] ❌ Lỗi đặt lệnh: Invalid symbol format: VNF301M, expected EXCHANGE:SYMBOL
+2026-04-16 09:55:02,295 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:56:01
+2026-04-16 09:56:02,202 [INFO] 📤 SELL 3 @ 1965.9
+2026-04-16 09:56:02,203 [ERROR] ❌ Lỗi đặt lệnh: Invalid symbol format: VNF301M, expected EXCHANGE:SYMBOL
+2026-04-16 09:56:02,203 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:57:01
+2026-04-16 09:57:02,107 [INFO] 📤 SELL 3 @ 1966.0
+2026-04-16 09:57:02,108 [ERROR] ❌ Lỗi đặt lệnh: Invalid symbol format: VNF301M, expected EXCHANGE:SYMBOL
+2026-04-16 09:57:02,108 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:58:01
+2026-04-16 09:58:02,006 [INFO] 📤 SELL 3 @ 1965.4
+2026-04-16 09:58:02,007 [ERROR] ❌ Lỗi đặt lệnh: Invalid symbol format: VNF301M, expected EXCHANGE:SYMBOL
+2026-04-16 09:58:02,007 [INFO] 💤 Ngủ 58s → thức dậy lúc 09:59:01
+2026-04-16 09:59:02,142 [INFO] 📤 SELL 3 @ 1966.1
+2026-04-16 09:59:02,142 [ERROR] ❌ Lỗi đặt lệnh: Invalid symbol format: VNF301M, expected EXCHANGE:SYMBOL
+2026-04-16 09:59:02,142 [INFO] 💤 Ngủ 58s → thức dậy lúc 10:00:01
+2026-04-16 10:00:02,252 [INFO] 📤 SELL 3 @ 1966.2
+2026-04-16 10:00:02,252 [ERROR] ❌ Lỗi đặt lệnh: Invalid symbol format: VNF301M, expected EXCHANGE:SYMBOL
+2026-04-16 10:00:02,253 [INFO] 💤 Ngủ 58s → thức dậy lúc 10:01:01
+2026-04-16 10:01:02,189 [INFO] 📤 SELL 3 @ 1966.0
+2026-04-16 10:01:02,189 [ERROR] ❌ Lỗi đặt lệnh: Invalid symbol format: VNF301M, expected EXCHANGE:SYMBOL
+2026-04-16 10:01:02,189 [INFO] 💤 Ngủ 58s → thức dậy lúc 10:02:01
+2026-04-16 10:02:02,130 [INFO] 📤 SELL 3 @ 1966.3
+2026-04-16 10:02:02,131 [ERROR] ❌ Lỗi đặt lệnh: Invalid symbol format: VNF301M, expected EXCHANGE:SYMBOL
+2026-04-16 10:02:02,131 [INFO] 💤 Ngủ 58s → thức dậy lúc 10:03:01
+2026-04-16 10:03:02,062 [INFO] 📤 SELL 3 @ 1966.3
+2026-04-16 10:03:02,062 [ERROR] ❌ Lỗi đặt lệnh: Invalid symbol format: VNF301M, expected EXCHANGE:SYMBOL
+2026-04-16 10:03:02,062 [INFO] 💤 Ngủ 58s → thức dậy lúc 10:04:01
+2026-04-16 10:04:02,678 [INFO] 📤 SELL 3 @ 1966.7
+2026-04-16 10:04:02,678 [ERROR] ❌ Lỗi đặt lệnh: Invalid symbol format: VNF301M, expected EXCHANGE:SYMBOL
+2026-04-16 10:04:02,678 [INFO] 💤 Ngủ 58s → thức dậy lúc 10:05:01
+2026-04-16 10:05:02,270 [INFO] 📤 SELL 3 @ 1967.2
+2026-04-16 10:05:02,271 [ERROR] ❌ Lỗi đặt lệnh: Invalid symbol format: VNF301M, expected EXCHANGE:SYMBOL
+2026-04-16 10:05:02,271 [INFO] 💤 Ngủ 58s → thức dậy lúc 10:06:01
+2026-04-16 10:37:39,617 [INFO] ✅ FIX Kết nối thành công!
+2026-04-16 11:11:35,609 [INFO] ✅ FIX Kết nối thành công!
+2026-04-16 11:11:37,723 [INFO] 💤 Ngủ 23s → thức dậy lúc 11:12:01
+2026-04-16 11:15:58,192 [INFO] ✅ FIX Kết nối thành công!
+2026-04-16 11:16:11,875 [INFO] 💤 Ngủ 49s → thức dậy lúc 11:17:01
+2026-04-16 13:57:11,123 [INFO] [OrderStore] Initialized SQLite store: orders.db
+2026-04-16 13:57:11,960 [INFO] 🔥 Bot khởi động — Chiến lược: ORB (Opening Range Breakout)
+2026-04-16 13:57:12,415 [INFO] ✅ FIX Kết nối thành công!
+2026-04-16 13:57:13,967 [INFO] ⏳ Timeframe: 1 phút/nến
+2026-04-16 13:57:15,066 [INFO] 💤 Ngủ 45s → thức dậy lúc 13:58:01
+2026-04-16 13:58:01,979 [INFO] 💤 Ngủ 59s → thức dậy lúc 13:59:01
+2026-04-16 13:59:02,398 [INFO] 💤 Ngủ 58s → thức dậy lúc 14:00:01
+2026-04-16 14:15:40,948 [INFO] ✅ FIX Kết nối thành công!
+2026-04-16 14:16:48,196 [INFO] 💤 Ngủ 12s → thức dậy lúc 14:17:01
+2026-04-16 14:33:06,866 [INFO] 💤 Ngủ 54s → thức dậy lúc 14:34:01
+2026-04-16 14:35:31,774 [INFO] ✅ FIX Kết nối thành công!

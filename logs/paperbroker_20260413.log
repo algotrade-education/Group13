@@ -1,0 +1,71 @@
+[2026-04-13 10:09:00] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=5|34=3|49=f2c11b00bf3d41fca072225f328ce98e|52=20260413-03:09:00.000|56=SERVER|1=main|553=Group13|10=009|
+[2026-04-13 10:09:00] [INFO] Session created: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-04-13 10:09:00] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_ne65pohm.cfg username=Group13
+[2026-04-13 10:09:00] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-04-13 10:09:00] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-04-13 10:09:00] [DEBUG] Registered handler for event 'fix:execution_report'. Total handlers: 2
+[2026-04-13 10:09:00] [DEBUG] Registered handler for event 'fix:order:report'. Total handlers: 3
+[2026-04-13 10:09:00] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-04-13 10:09:00] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-04-13 10:09:00] [INFO] event=fix_id_resolved username=Group13 fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b
+[2026-04-13 10:09:00] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-04-13 10:09:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-04-13 10:09:01] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-04-13 10:09:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-04-13 10:09:01] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-04-13 10:09:01] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=472210000
+[2026-04-13 10:09:01] [INFO] Starting FIX session...
+[2026-04-13 10:09:01] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=135|35=A|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260413-03:09:01.000|56=SERVER|1=main|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=111|
+[2026-04-13 10:09:01] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260413-03:09:02.187|56=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|10=236|
+[2026-04-13 10:09:01] [INFO] Logon success: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-04-13 10:09:01] [INFO] Order manager session set: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-04-13 10:09:01] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-04-13 10:29:26] [INFO] Session created: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-04-13 10:29:26] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_at8gx3te.cfg username=Group13
+[2026-04-13 10:29:26] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-04-13 10:29:26] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-04-13 10:29:26] [DEBUG] Registered handler for event 'fix:execution_report'. Total handlers: 2
+[2026-04-13 10:29:26] [DEBUG] Registered handler for event 'fix:order:report'. Total handlers: 3
+[2026-04-13 10:29:26] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-04-13 10:29:27] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-04-13 10:29:27] [INFO] event=fix_id_resolved username=Group13 fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b
+[2026-04-13 10:29:27] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-04-13 10:29:27] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-04-13 10:29:27] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-04-13 10:29:27] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-04-13 10:29:27] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-04-13 10:29:27] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=472210000
+[2026-04-13 10:29:27] [INFO] Starting FIX session...
+[2026-04-13 10:29:27] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=135|35=A|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260413-03:29:27.000|56=SERVER|1=main|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=121|
+[2026-04-13 10:29:28] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260413-03:29:28.655|56=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|10=246|
+[2026-04-13 10:29:28] [INFO] Logon success: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-04-13 10:29:28] [INFO] Order manager session set: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-04-13 10:29:28] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-04-13 10:29:57] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=2|49=f2c11b00bf3d41fca072225f328ce98e|52=20260413-03:29:57.000|56=SERVER|1=main|553=Group13|10=017|
+[2026-04-13 10:29:59] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=2|49=SERVER|52=20260413-03:29:59.284|56=f2c11b00bf3d41fca072225f328ce98e|10=153|
+[2026-04-13 10:30:27] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=3|49=f2c11b00bf3d41fca072225f328ce98e|52=20260413-03:30:27.000|56=SERVER|1=main|553=Group13|10=007|
+[2026-04-13 10:30:29] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=3|49=SERVER|52=20260413-03:30:29.284|56=f2c11b00bf3d41fca072225f328ce98e|10=143|
+[2026-04-13 10:30:57] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=4|49=f2c11b00bf3d41fca072225f328ce98e|52=20260413-03:30:57.000|56=SERVER|1=main|553=Group13|10=011|
+[2026-04-13 10:30:59] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=4|49=SERVER|52=20260413-03:30:59.284|56=f2c11b00bf3d41fca072225f328ce98e|10=147|
+[2026-04-13 10:31:27] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=5|49=f2c11b00bf3d41fca072225f328ce98e|52=20260413-03:31:27.000|56=SERVER|1=main|553=Group13|10=010|
+[2026-04-13 10:31:29] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=5|49=SERVER|52=20260413-03:31:29.284|56=f2c11b00bf3d41fca072225f328ce98e|10=146|
+[2026-04-13 10:31:57] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=6|49=f2c11b00bf3d41fca072225f328ce98e|52=20260413-03:31:57.000|56=SERVER|1=main|553=Group13|10=014|
+[2026-04-13 10:31:59] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=6|49=SERVER|52=20260413-03:31:59.284|56=f2c11b00bf3d41fca072225f328ce98e|10=150|
+[2026-04-13 10:32:27] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=7|49=f2c11b00bf3d41fca072225f328ce98e|52=20260413-03:32:27.000|56=SERVER|1=main|553=Group13|10=013|
+[2026-04-13 10:32:29] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=7|49=SERVER|52=20260413-03:32:29.284|56=f2c11b00bf3d41fca072225f328ce98e|10=149|
+[2026-04-13 10:32:57] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=8|49=f2c11b00bf3d41fca072225f328ce98e|52=20260413-03:32:57.000|56=SERVER|1=main|553=Group13|10=017|
+[2026-04-13 10:32:59] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=8|49=SERVER|52=20260413-03:32:59.284|56=f2c11b00bf3d41fca072225f328ce98e|10=153|
+[2026-04-13 10:33:27] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=9|49=f2c11b00bf3d41fca072225f328ce98e|52=20260413-03:33:27.000|56=SERVER|1=main|553=Group13|10=016|
+[2026-04-13 10:33:29] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=9|49=SERVER|52=20260413-03:33:29.284|56=f2c11b00bf3d41fca072225f328ce98e|10=152|
+[2026-04-13 10:33:57] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=10|49=f2c11b00bf3d41fca072225f328ce98e|52=20260413-03:33:57.000|56=SERVER|1=main|553=Group13|10=060|
+[2026-04-13 10:33:59] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=10|49=SERVER|52=20260413-03:33:59.284|56=f2c11b00bf3d41fca072225f328ce98e|10=196|
+[2026-04-13 10:34:27] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=11|49=f2c11b00bf3d41fca072225f328ce98e|52=20260413-03:34:27.000|56=SERVER|1=main|553=Group13|10=059|
+[2026-04-13 10:34:29] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=11|49=SERVER|52=20260413-03:34:29.284|56=f2c11b00bf3d41fca072225f328ce98e|10=195|
+[2026-04-13 10:34:57] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=12|49=f2c11b00bf3d41fca072225f328ce98e|52=20260413-03:34:57.000|56=SERVER|1=main|553=Group13|10=063|
+[2026-04-13 10:34:59] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=12|49=SERVER|52=20260413-03:34:59.284|56=f2c11b00bf3d41fca072225f328ce98e|10=199|
+[2026-04-13 10:35:27] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=13|49=f2c11b00bf3d41fca072225f328ce98e|52=20260413-03:35:27.000|56=SERVER|1=main|553=Group13|10=062|
+[2026-04-13 10:35:29] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=13|49=SERVER|52=20260413-03:35:29.284|56=f2c11b00bf3d41fca072225f328ce98e|10=198|
+[2026-04-13 10:35:57] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=14|49=f2c11b00bf3d41fca072225f328ce98e|52=20260413-03:35:57.000|56=SERVER|1=main|553=Group13|10=066|
+[2026-04-13 10:35:59] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=14|49=SERVER|52=20260413-03:35:59.284|56=f2c11b00bf3d41fca072225f328ce98e|10=202|
+[2026-04-13 10:36:27] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=101|35=0|34=15|49=f2c11b00bf3d41fca072225f328ce98e|52=20260413-03:36:27.000|56=SERVER|1=main|553=Group13|10=065|
+[2026-04-13 10:36:29] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=15|49=SERVER|52=20260413-03:36:29.284|56=f2c11b00bf3d41fca072225f328ce98e|10=201|

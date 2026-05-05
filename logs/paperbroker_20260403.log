@@ -1,0 +1,143 @@
+[2026-04-03 13:33:48] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=5|34=2|49=f2c11b00bf3d41fca072225f328ce98e|52=20260403-06:33:48.000|56=SERVER|1=main|553=Group13|10=019|
+[2026-04-03 13:33:48] [INFO] Session created: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-04-03 13:33:48] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_z9uft1lr.cfg username=Group13
+[2026-04-03 13:33:48] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-04-03 13:33:48] [DEBUG] Registered handler for event 'fix:logon'. Total handlers: 1
+[2026-04-03 13:33:48] [DEBUG] Registered handler for event 'fix:execution_report'. Total handlers: 2
+[2026-04-03 13:33:48] [DEBUG] Registered handler for event 'fix:order:report'. Total handlers: 3
+[2026-04-03 13:33:48] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-04-03 13:33:49] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-04-03 13:33:49] [INFO] event=fix_id_resolved username=Group13 fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b
+[2026-04-03 13:33:49] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-04-03 13:33:49] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-04-03 13:33:49] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-04-03 13:33:49] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-04-03 13:33:50] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-04-03 13:33:50] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=333810000
+[2026-04-03 13:33:50] [INFO] Starting FIX session...
+[2026-04-03 13:33:50] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=135|35=A|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260403-06:33:50.000|56=SERVER|1=main|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=114|
+[2026-04-03 13:33:50] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260403-06:33:50.924|56=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|10=237|
+[2026-04-03 13:33:50] [INFO] Logon success: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-04-03 13:33:50] [INFO] Order manager session set: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-04-03 13:33:50] [DEBUG] Emitting event 'fix:logon' to 1 handler(s)
+[2026-04-03 13:33:57] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-04-03 13:33:58] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-04-03 13:33:58] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-04-03 13:33:58] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-04-03 13:33:58] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-04-03 13:33:58] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=333810000
+[2026-04-03 13:33:58] [DEBUG] [TO APP] 8=FIX.4.4|9=186|35=D|34=2|49=f2c11b00bf3d41fca072225f328ce98e|52=20260403-06:33:58.000|56=SERVER|1=main|11=e4b093fa|38=3|40=2|44=1841.3|54=2|55=VN30F2604|59=1|60=20260403-06:33:58|207=HNXDS|553=Group13|10=150|
+[2026-04-03 13:33:58] [INFO] [ORDER] Sent new order: e4b093fa
+[2026-04-03 13:33:58] [DEBUG] No handlers registered for event 'fix:order:submit'
+[2026-04-03 13:33:58] [INFO] [FROM APP] 8=FIX.4.4|9=284|35=8|34=2|49=SERVER|52=20260403-06:33:58.657|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=e4b093fa|14=0|17=42979e1c-8df7-4282-a2d3-c3542f0877ff|37=91ed118b-8549-42c8-9a87-dfa5afb442b5|38=3|39=A|40=2|44=1841.3|54=2|55=VN30F2604|59=1|60=20260403-06:33:58.656|150=A|151=3|207=HNXDS|10=148|
+[2026-04-03 13:33:58] [INFO] [PENDING_NEW] e4b093fa at 2026-04-03T06:33:58.656000+00:00
+[2026-04-03 13:33:58] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-04-03 13:33:58] [DEBUG] No handlers registered for event 'fix:order:pending_new'
+[2026-04-03 13:33:58] [INFO] [FROM APP] 8=FIX.4.4|9=284|35=8|34=3|49=SERVER|52=20260403-06:33:58.712|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=e4b093fa|14=0|17=6873c824-2684-43d2-ab10-e6f44d61f46a|37=91ed118b-8549-42c8-9a87-dfa5afb442b5|38=3|39=0|40=2|44=1841.3|54=2|55=VN30F2604|59=1|60=20260403-06:33:58.711|150=0|151=3|207=HNXDS|10=034|
+[2026-04-03 13:33:58] [INFO] [NEW] Order e4b093fa accepted at 2026-04-03T06:33:58.711000+00:00
+[2026-04-03 13:33:58] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-04-03 13:33:58] [DEBUG] No handlers registered for event 'fix:order:accepted'
+[2026-04-03 13:33:58] [INFO] [FROM APP] 8=FIX.4.4|9=304|35=8|34=4|49=SERVER|52=20260403-06:33:59.164|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=1841.8|11=e4b093fa|14=3|17=32f407d0-4506-4351-9ab9-f5daea557634|31=1841.8|32=3|37=91ed118b-8549-42c8-9a87-dfa5afb442b5|38=3|39=2|40=2|44=1841.8|54=2|55=VN30F2604|59=1|60=20260403-06:33:58.000|150=F|151=0|207=HNXDS|10=222|
+[2026-04-03 13:33:58] [INFO] [TRADE] e4b093fa: Traded 3.0 @ 1841.8 at 2026-04-03T06:33:58+00:00 (OrdStatus=2)
+[2026-04-03 13:33:58] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-04-03 13:33:58] [DEBUG] No handlers registered for event 'fix:order:filled'
+[2026-04-03 13:34:03] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-04-03 13:34:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-04-03 13:34:04] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-04-03 13:34:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-04-03 13:34:04] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-04-03 13:34:04] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=471390000
+[2026-04-03 13:34:04] [DEBUG] [TO APP] 8=FIX.4.4|9=186|35=D|34=3|49=f2c11b00bf3d41fca072225f328ce98e|52=20260403-06:34:04.000|56=SERVER|1=main|11=925f16ea|38=3|40=2|44=1841.8|54=2|55=VN30F2604|59=1|60=20260403-06:34:04|207=HNXDS|553=Group13|10=097|
+[2026-04-03 13:34:04] [INFO] [ORDER] Sent new order: 925f16ea
+[2026-04-03 13:34:04] [DEBUG] No handlers registered for event 'fix:order:submit'
+[2026-04-03 13:34:04] [INFO] [FROM APP] 8=FIX.4.4|9=284|35=8|34=5|49=SERVER|52=20260403-06:34:04.522|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=925f16ea|14=0|17=f7c8aef4-bf09-46e7-921d-b7d44cd24dd8|37=acef1b7d-f1fb-4678-b722-3c32538a5c86|38=3|39=A|40=2|44=1841.8|54=2|55=VN30F2604|59=1|60=20260403-06:34:04.521|150=A|151=3|207=HNXDS|10=099|
+[2026-04-03 13:34:04] [INFO] [PENDING_NEW] 925f16ea at 2026-04-03T06:34:04.521000+00:00
+[2026-04-03 13:34:04] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-04-03 13:34:04] [DEBUG] No handlers registered for event 'fix:order:pending_new'
+[2026-04-03 13:34:04] [INFO] [FROM APP] 8=FIX.4.4|9=284|35=8|34=6|49=SERVER|52=20260403-06:34:04.558|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=925f16ea|14=0|17=9b6bf3d2-cfe7-49b5-a341-feea08b551d3|37=acef1b7d-f1fb-4678-b722-3c32538a5c86|38=3|39=0|40=2|44=1841.8|54=2|55=VN30F2604|59=1|60=20260403-06:34:04.557|150=0|151=3|207=HNXDS|10=068|
+[2026-04-03 13:34:04] [INFO] [NEW] Order 925f16ea accepted at 2026-04-03T06:34:04.557000+00:00
+[2026-04-03 13:34:04] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-04-03 13:34:04] [DEBUG] No handlers registered for event 'fix:order:accepted'
+[2026-04-03 13:34:06] [INFO] [FROM APP] 8=FIX.4.4|9=304|35=8|34=7|49=SERVER|52=20260403-06:34:07.021|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=1844.8|11=925f16ea|14=3|17=0fa70c43-3384-4d9e-9ca3-dddb84a507b3|31=1844.8|32=3|37=acef1b7d-f1fb-4678-b722-3c32538a5c86|38=3|39=2|40=2|44=1844.8|54=2|55=VN30F2604|59=1|60=20260403-13:34:06.993|150=F|151=0|207=HNXDS|10=162|
+[2026-04-03 13:34:06] [INFO] [TRADE] 925f16ea: Traded 3.0 @ 1844.8 at 2026-04-03T13:34:06.993000+00:00 (OrdStatus=2)
+[2026-04-03 13:34:06] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-04-03 13:34:06] [DEBUG] No handlers registered for event 'fix:order:filled'
+[2026-04-03 13:34:34] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=4|49=f2c11b00bf3d41fca072225f328ce98e|52=20260403-06:34:34.000|56=SERVER|1=main|553=Group13|10=012|
+[2026-04-03 13:34:37] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=81|35=0|34=8|49=SERVER|52=20260403-06:34:37.718|56=f2c11b00bf3d41fca072225f328ce98e|10=155|
+[2026-04-03 13:35:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-04-03 13:35:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-04-03 13:35:02] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=1
+[2026-04-03 13:35:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-04-03 13:35:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-04-03 13:35:02] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=332970000
+[2026-04-03 13:35:02] [DEBUG] [TO APP] 8=FIX.4.4|9=186|35=D|34=5|49=f2c11b00bf3d41fca072225f328ce98e|52=20260403-06:35:02.000|56=SERVER|1=main|11=306501d5|38=3|40=2|44=1840.2|54=1|55=VN30F2604|59=1|60=20260403-06:35:02|207=HNXDS|553=Group13|10=238|
+[2026-04-03 13:35:02] [INFO] [ORDER] Sent new order: 306501d5
+[2026-04-03 13:35:02] [DEBUG] No handlers registered for event 'fix:order:submit'
+[2026-04-03 13:35:02] [INFO] [FROM APP] 8=FIX.4.4|9=284|35=8|34=9|49=SERVER|52=20260403-06:35:02.984|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=306501d5|14=0|17=452364e3-0b47-444e-8c89-4544e440f437|37=f0c048cf-43a0-4298-b7bb-7eab87c1bae3|38=3|39=A|40=2|44=1840.2|54=1|55=VN30F2604|59=1|60=20260403-06:35:02.984|150=A|151=3|207=HNXDS|10=169|
+[2026-04-03 13:35:02] [INFO] [PENDING_NEW] 306501d5 at 2026-04-03T06:35:02.984000+00:00
+[2026-04-03 13:35:02] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-04-03 13:35:02] [DEBUG] No handlers registered for event 'fix:order:pending_new'
+[2026-04-03 13:35:02] [INFO] [FROM APP] 8=FIX.4.4|9=285|35=8|34=10|49=SERVER|52=20260403-06:35:03.021|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=306501d5|14=0|17=f8bd6968-29e4-4139-a630-71c2a40d5057|37=f0c048cf-43a0-4298-b7bb-7eab87c1bae3|38=3|39=0|40=2|44=1840.2|54=1|55=VN30F2604|59=1|60=20260403-06:35:03.020|150=0|151=3|207=HNXDS|10=232|
+[2026-04-03 13:35:02] [INFO] [NEW] Order 306501d5 accepted at 2026-04-03T06:35:03.020000+00:00
+[2026-04-03 13:35:02] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-04-03 13:35:02] [DEBUG] No handlers registered for event 'fix:order:accepted'
+[2026-04-03 13:35:02] [INFO] [FROM APP] 8=FIX.4.4|9=305|35=8|34=11|49=SERVER|52=20260403-06:35:03.065|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=1839.9|11=306501d5|14=3|17=ef73582d-0a21-4cfb-934c-ec31c3b47b0a|31=1839.9|32=3|37=f0c048cf-43a0-4298-b7bb-7eab87c1bae3|38=3|39=2|40=2|44=1839.9|54=1|55=VN30F2604|59=1|60=20260403-06:35:02.000|150=F|151=0|207=HNXDS|10=215|
+[2026-04-03 13:35:02] [INFO] [TRADE] 306501d5: Traded 3.0 @ 1839.9 at 2026-04-03T06:35:02+00:00 (OrdStatus=2)
+[2026-04-03 13:35:02] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-04-03 13:35:02] [DEBUG] No handlers registered for event 'fix:order:filled'
+[2026-04-03 13:35:32] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=6|49=f2c11b00bf3d41fca072225f328ce98e|52=20260403-06:35:32.000|56=SERVER|1=main|553=Group13|10=013|
+[2026-04-03 13:35:33] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=82|35=0|34=12|49=SERVER|52=20260403-06:35:33.718|56=f2c11b00bf3d41fca072225f328ce98e|10=196|
+[2026-04-03 13:36:02] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=100|35=0|34=7|49=f2c11b00bf3d41fca072225f328ce98e|52=20260403-06:36:02.000|56=SERVER|1=main|553=Group13|10=012|
+[2026-04-03 13:36:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic payload_keys=['fixAccountID', 'subAccountID']
+[2026-04-03 13:36:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/portfolio-by-sub/basic succeeded status_code=200
+[2026-04-03 13:36:02] [INFO] event=portfolio_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main instrument_count=0
+[2026-04-03 13:36:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash payload_keys=['fixAccountID', 'subAccountID']
+[2026-04-03 13:36:02] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/account-info-by-sub/remain-cash succeeded status_code=200
+[2026-04-03 13:36:02] [INFO] event=remain_cash_resolved fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b subAccountID=main remainCash=472740000
+[2026-04-03 13:36:02] [DEBUG] [TO APP] 8=FIX.4.4|9=186|35=D|34=8|49=f2c11b00bf3d41fca072225f328ce98e|52=20260403-06:36:02.000|56=SERVER|1=main|11=909928ac|38=3|40=2|44=1840.7|54=2|55=VN30F2604|59=1|60=20260403-06:36:02|207=HNXDS|553=Group13|10=058|
+[2026-04-03 13:36:02] [INFO] [ORDER] Sent new order: 909928ac
+[2026-04-03 13:36:02] [DEBUG] No handlers registered for event 'fix:order:submit'
+[2026-04-03 13:36:02] [INFO] [FROM APP] 8=FIX.4.4|9=285|35=8|34=13|49=SERVER|52=20260403-06:36:03.083|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=909928ac|14=0|17=aec358b6-ae7f-4e83-a728-becb33880e14|37=7b01e766-cdc1-4da1-9865-c1ba5ba2acbe|38=3|39=A|40=2|44=1840.7|54=2|55=VN30F2604|59=1|60=20260403-06:36:03.082|150=A|151=3|207=HNXDS|10=173|
+[2026-04-03 13:36:02] [INFO] [PENDING_NEW] 909928ac at 2026-04-03T06:36:03.082000+00:00
+[2026-04-03 13:36:02] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-04-03 13:36:02] [DEBUG] No handlers registered for event 'fix:order:pending_new'
+[2026-04-03 13:36:02] [INFO] [FROM APP] 8=FIX.4.4|9=285|35=8|34=14|49=SERVER|52=20260403-06:36:03.116|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=909928ac|14=0|17=5cfbdeec-0b71-4035-938d-b517d57f409b|37=7b01e766-cdc1-4da1-9865-c1ba5ba2acbe|38=3|39=0|40=2|44=1840.7|54=2|55=VN30F2604|59=1|60=20260403-06:36:03.115|150=0|151=3|207=HNXDS|10=083|
+[2026-04-03 13:36:02] [INFO] [NEW] Order 909928ac accepted at 2026-04-03T06:36:03.115000+00:00
+[2026-04-03 13:36:02] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-04-03 13:36:02] [DEBUG] No handlers registered for event 'fix:order:accepted'
+[2026-04-03 13:36:03] [INFO] [FROM APP] 8=FIX.4.4|9=305|35=8|34=15|49=SERVER|52=20260403-06:36:03.281|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=1840.8|11=909928ac|14=3|17=7ff01b9c-636e-487b-87bd-ab616911c9a3|31=1840.8|32=3|37=7b01e766-cdc1-4da1-9865-c1ba5ba2acbe|38=3|39=2|40=2|44=1840.8|54=2|55=VN30F2604|59=1|60=20260403-06:36:02.000|150=F|151=0|207=HNXDS|10=231|
+[2026-04-03 13:36:03] [INFO] [TRADE] 909928ac: Traded 3.0 @ 1840.8 at 2026-04-03T06:36:02+00:00 (OrdStatus=2)
+[2026-04-03 13:36:03] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-04-03 13:36:03] [DEBUG] No handlers registered for event 'fix:order:filled'
+[2026-04-03 13:37:19] [INFO] Session created: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-04-03 13:37:19] [DEBUG] FIXSessionManager initialized config=/var/folders/3v/rnx_2jlj5kg92m637d62559r0000gn/T/paperbroker_eg3gmq_i.cfg username=Group13
+[2026-04-03 13:37:19] [DEBUG] RestSession initialized with base_url: https://papertrade.algotrade.vn/accounting
+[2026-04-03 13:37:19] [DEBUG] Registered handler for event 'fix:order:filled'. Total handlers: 1
+[2026-04-03 13:37:19] [INFO] Starting FIX session...
+[2026-04-03 13:37:19] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id payload_keys=['username', 'password']
+[2026-04-03 13:37:19] [DEBUG] [TO ADMIN] 8=FIX.4.4|9=135|35=A|34=1|49=f2c11b00bf3d41fca072225f328ce98e|52=20260403-06:37:19.000|56=SERVER|1=main|98=0|108=30|141=Y|553=Group13|554=yCr8g4w0tLuT|10=123|
+[2026-04-03 13:37:20] [DEBUG] POST https://papertrade.algotrade.vn/accounting/api/fix-account-info/get-fix-id succeeded status_code=200
+[2026-04-03 13:37:20] [INFO] event=fix_id_resolved username=Group13 fixAccountID=f72030f52dc94e38b4c32ee0d7f9a03b
+[2026-04-03 13:37:20] [DEBUG] [FROM ADMIN] 8=FIX.4.4|9=99|35=A|34=1|49=SERVER|52=20260403-06:37:20.399|56=f2c11b00bf3d41fca072225f328ce98e|98=0|108=30|141=Y|10=244|
+[2026-04-03 13:37:20] [INFO] Logon success: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-04-03 13:37:20] [INFO] Order manager session set: FIX.4.4:f2c11b00bf3d41fca072225f328ce98e->SERVER
+[2026-04-03 13:37:20] [DEBUG] No handlers registered for event 'fix:logon'
+[2026-04-03 13:37:21] [DEBUG] [TO APP] 8=FIX.4.4|9=186|35=D|34=2|49=f2c11b00bf3d41fca072225f328ce98e|52=20260403-06:37:21.000|56=SERVER|1=main|11=fb95b3a2|38=3|40=2|44=1842.9|54=1|55=VN30F2604|59=1|60=20260403-06:37:21|207=HNXDS|553=Group13|10=144|
+[2026-04-03 13:37:21] [INFO] [ORDER] Sent new order: fb95b3a2
+[2026-04-03 13:37:21] [DEBUG] No handlers registered for event 'fix:order:submit'
+[2026-04-03 13:37:21] [INFO] [FROM APP] 8=FIX.4.4|9=284|35=8|34=2|49=SERVER|52=20260403-06:37:21.716|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=fb95b3a2|14=0|17=648dba42-ffc3-405c-8217-e1b45084fe82|37=5ef09529-64c4-45c0-ab5b-f3ae23d6d208|38=3|39=A|40=2|44=1842.9|54=1|55=VN30F2604|59=1|60=20260403-06:37:21.714|150=A|151=3|207=HNXDS|10=145|
+[2026-04-03 13:37:21] [INFO] [PENDING_NEW] fb95b3a2 at 2026-04-03T06:37:21.714000+00:00
+[2026-04-03 13:37:21] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-04-03 13:37:21] [DEBUG] No handlers registered for event 'fix:order:pending_new'
+[2026-04-03 13:37:21] [INFO] [FROM APP] 8=FIX.4.4|9=284|35=8|34=3|49=SERVER|52=20260403-06:37:21.752|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=0|11=fb95b3a2|14=0|17=c6881f55-9e3c-4a12-b47e-7c45b4e96ed5|37=5ef09529-64c4-45c0-ab5b-f3ae23d6d208|38=3|39=0|40=2|44=1842.9|54=1|55=VN30F2604|59=1|60=20260403-06:37:21.751|150=0|151=3|207=HNXDS|10=179|
+[2026-04-03 13:37:21] [INFO] [NEW] Order fb95b3a2 accepted at 2026-04-03T06:37:21.751000+00:00
+[2026-04-03 13:37:21] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-04-03 13:37:21] [DEBUG] No handlers registered for event 'fix:order:accepted'
+[2026-04-03 13:37:21] [INFO] [FROM APP] 8=FIX.4.4|9=304|35=8|34=4|49=SERVER|52=20260403-06:37:22.156|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=1842.1|11=fb95b3a2|14=1|17=5a2a65f3-e54d-4fde-b457-5525e14258f9|31=1842.1|32=1|37=5ef09529-64c4-45c0-ab5b-f3ae23d6d208|38=3|39=1|40=2|44=1842.1|54=1|55=VN30F2604|59=1|60=20260403-06:37:21.000|150=F|151=2|207=HNXDS|10=026|
+[2026-04-03 13:37:21] [INFO] [TRADE] fb95b3a2: Traded 1.0 @ 1842.1 at 2026-04-03T06:37:21+00:00 (OrdStatus=1)
+[2026-04-03 13:37:21] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-04-03 13:37:21] [DEBUG] No handlers registered for event 'fix:order:partial_fill'
+[2026-04-03 13:37:21] [INFO] [FROM APP] 8=FIX.4.4|9=313|35=8|34=5|49=SERVER|52=20260403-06:37:22.233|56=f2c11b00bf3d41fca072225f328ce98e|1=main|6=1842.1666666667|11=fb95b3a2|14=3|17=a5053554-ae90-42a2-9872-caad3d7bc901|31=1842.2|32=2|37=5ef09529-64c4-45c0-ab5b-f3ae23d6d208|38=3|39=2|40=2|44=1842.2|54=1|55=VN30F2604|59=1|60=20260403-06:37:21.000|150=F|151=0|207=HNXDS|10=233|
+[2026-04-03 13:37:21] [INFO] [TRADE] fb95b3a2: Traded 2.0 @ 1842.2 at 2026-04-03T06:37:21+00:00 (OrdStatus=2)
+[2026-04-03 13:37:21] [DEBUG] No handlers registered for event 'fix:order:update'
+[2026-04-03 13:37:21] [DEBUG] Emitting event 'fix:order:filled' to 1 handler(s)

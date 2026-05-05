@@ -1,0 +1,23 @@
+name: plutus_x86
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scipy
+  - jupyter
+  - notebook
+  - ipykernel
+  - pip
+  - pip:
+      - quickfix
+      - ta
+      - python-dotenv
+      - requests
+      - tqdm
+      - pytz
+      - psycopg          
