@@ -1,10 +1,10 @@
-# Group 13 — Multi-Strategy Algorithmic Trading System on VNF301M
+# Group 13 — EMA Algorithmic Trading System on VNF301M
 
 ## Abstract
 
 This project designs, backtests, and deploys an automated multi-strategy trading system on the VN30 index futures continuous contract (VNF301M). The primary strategy is **Trend Following via EMA Crossover (EMA 10/30)**, supplemented by a dynamic ATR-based Stop Loss and an RSI entry filter. An **Opening Range Breakout (ORB)** strategy is also implemented in the codebase as a secondary option for future use.
 
-Backtesting results show that while the EMA strategy generates a very high number of trades, the win rate remains below 40% due to frequent whipsaw signals on the 15-minute timeframe — a known limitation of crossover-based systems in choppy markets. The ORB strategy, though not the focus of this submission, demonstrates a more favorable Profit Factor on the out-of-sample period. Paper Trading was conducted on the Algotrade arena26 platform from March 31 to April 3, 2026 with 77 filled orders.
+Backtesting results show that while the EMA strategy generates a very high number of trades, the win rate remains below 40% due to frequent whipsaw signals on the 1-minute timeframe — a known limitation of crossover-based systems in choppy markets. The ORB strategy, though not the focus of this submission, demonstrates a more favorable Profit Factor on the out-of-sample period. Paper Trading was conducted on the Algotrade arena26 platform from March 31 to April 3, 2026 with 77 filled orders.
 
 ---
 
