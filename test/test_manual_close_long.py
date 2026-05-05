@@ -11,12 +11,12 @@ logger = logging.getLogger(__name__)
 
 def main():
     # --- THÔNG TIN MỞ VỊ THẾ SHORT ---
-    SYMBOL = "HNXDS:VN30F2604" 
+    SYMBOL = "HNXDS:VN30F2605" 
     ACCOUNT = "main"
     USERNAME = "Group13"
     PASSWORD = "yCr8g4w0tLuT"
     SENDER_ID = "f2c11b00bf3d41fca072225f328ce98e"
-    SHORT_QTY = 3 # Khang muốn Short 3 hợp đồng
+    SHORT_QTY = 1 # Khang muốn Short 3 hợp đồng
 
     order_filled = ThreadEvent()
 
